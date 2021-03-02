@@ -1,0 +1,41 @@
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div class="logo"><a href="index.html"><img src="images/logo-white.png" alt="" /></a></div>
+            <div class="header-top-right">
+                <div class="header-btn"><a href="contact-us.html" class="btn btn-primary">Book Appointment</a>
+                </div>
+                <div class="header-search-btn">
+                    <button class="search-btn"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-top-mobile">
+        <div class="mobile-car-btn">
+            <button class="pushy-menu-btn"></button>
+        </div>
+        <div class="mobile-logo"><a href="index.html"><img src="images/logo-icon.png" alt="" /></a></div>
+        <div class="menu-icon">
+            <button class="cd-dropdown-trigger"></button>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="container">
+            <div class="logo-icon"><a href="index.html"><img src="images/logo-icon.png" alt="" /></a></div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="index.html"><img src="images/icon-car.png" alt="" /></a></li>
+                    <li @@if (context.page === 'home'){ class='active' }><a href="index.html">Home</a></li>
+                    <li @@if (context.page === 'about'){ class='active' }><a href="about-us.html" onclick="handleOutboundLinkClicks">About Us</a></li>
+                    <li @@if (context.page === 'car'){ class='active' }><a href="our-car.html">Our Cars</a></li>
+                    <li @@if (context.page === 'service'){ class='active' }><a href="our-workshop.html">Service Centre</a></li>
+                    <li @@if (context.page === 'prom'){ class='active' }><a href="our-promotion.html">Our Promotion</a></li>
+                    <li @@if (context.page === 'contact'){ class='active' }><a href="contact-us.html">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="header-contact">Mon - Fri (10am - 7pm): <a href="tel: +65 6455 2535">+65 6455 2535</a>
+            </div>
+        </div>
+    </div>
+</header>
