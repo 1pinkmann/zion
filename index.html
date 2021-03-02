@@ -40,6 +40,17 @@
     <meta name="theme-color" content="#000">
     <link rel="stylesheet" href="css/style.css">
 
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-56D7M6P');</script>
+    <!-- End Google Tag Manager -->
+
     <!-- Facebook Pixel Code -->
     <script>
         !function (f, b, e, v, n, t, s) {
@@ -74,6 +85,10 @@
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-56D7M6P" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
 
     <!--- Search -->
     <div class="close-btn"> <span class="fas fa-times">X</span> </div>
@@ -93,7 +108,7 @@
             <a href="#0" class="cd-close">Close</a>
             <ul class="cd-dropdown-content">
                 <li class="active"><a href="index.html">Home</a></li>
-                <li><a href="about-us.html">About us</a></li>
+                <li><a href="about-us.html" onclick="handleOutboundLinkClicks">About us</a></li>
                 <li><a href="our-car.html">Our Cars</a></li>
                 <li><a href="our-workshop.html">Service Centre</a></li>
                 <li><a href="our-promotion.html">Our Promotions</a></li>
@@ -108,6 +123,16 @@
             </ul>
         </nav>
     </div>
+
+    <script>
+        function handleOutboundLinkClicks(event) {
+            ga('send', 'event', {
+                eventCategory: 'Outbound Link',
+                eventAction: 'click',
+                eventLabel: event.target.href
+            });
+        }
+    </script>
     <!--- Mobile & Tablet Menu -->
 
     <!--- Car Menu -->
