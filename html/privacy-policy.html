@@ -16,17 +16,23 @@
     <!--- /Search -->
 
     <!--- Mobile & Tablet Menu -->
-    @@include('./templates/mobileMenu.html')
+    @@include('./templates/mobileMenu.html', {
+        'path': ''
+    })
     <!--- Mobile & Tablet Menu -->
 
     <!--- Car Menu -->
-    @@include('./templates/car-menu.html')
+    @@include('./templates/car-menu.html', {
+        'path': '/all-cars'
+        })
     <!--- /Car Menu -->
 
     <div id="wrapper">
 
         <!--- Header -->
-        @@include('./templates/header.html')
+        @@include('./templates/header.html', {
+            'path': ''
+        })
         <!--- /Header -->
 
         <div id="middle">

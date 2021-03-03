@@ -18,11 +18,14 @@
   <!--- Mobile & Tablet Menu -->
   @@include('../html/templates/mobileMenu.html', {
   'page': 'cars',
+  'path': '.'
   })
   <!--- Mobile & Tablet Menu -->
 
   <!--- Car Menu -->
-  @@include('../html/templates/car-menu.html')
+  @@include('../html/templates/car-menu.html', {
+    'path': '.'
+  })
   <!--- /Car Menu -->
 
   <div id="wrapper">
@@ -30,6 +33,7 @@
     <!--- Header -->
     @@include('../html/templates/header.html', {
     'page': 'cars',
+    'path': '.'
     })
     <!--- /Header -->
 

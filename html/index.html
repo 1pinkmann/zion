@@ -1,5 +1,5 @@
 @@include('./templates/head.html', {
-    'title': 'Your Preferred Car Dealership | Zion Auto Gallery Pte Ltd',
+'title': 'Your Preferred Car Dealership | Zion Auto Gallery Pte Ltd',
 })
 
 <body>
@@ -16,19 +16,23 @@
 
     <!--- Mobile & Tablet Menu -->
     @@include('./templates/mobileMenu.html', {
-        'page': 'home',
+    'page': 'home',
+    'path': ''
     })
     <!--- Mobile & Tablet Menu -->
 
     <!--- Car Menu -->
-    @@include('./templates/car-menu.html')
+    @@include('./templates/car-menu.html', {
+    'path': '/all-cars'
+    })
     <!--- /Car Menu -->
 
     <div id="wrapper">
 
         <!--- Header -->
         @@include('./templates/header.html', {
-            'page': 'home',
+        'page': 'home',
+        'path': ''
         })
         <!--- /Header -->
 

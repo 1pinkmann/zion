@@ -17,11 +17,14 @@
   <!--- Mobile & Tablet Menu -->
   @@include('./templates/mobileMenu.html', {
     'page': 'about',
+    'path': ''
     })
   <!--- Mobile & Tablet Menu -->
 
   <!--- Car Menu -->
-  @@include('./templates/car-menu.html')
+  @@include('./templates/car-menu.html', {
+    'path': '/all-cars'
+    })
   <!--- /Car Menu -->
 
   <div id="wrapper">
@@ -29,6 +32,7 @@
     <!--- Header -->
     @@include('./templates/header.html', {
     'page': 'about',
+    'path': ''
     })
     <!--- /Header -->
 
