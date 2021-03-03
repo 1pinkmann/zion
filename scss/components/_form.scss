@@ -14,6 +14,11 @@
 
 .form-group{
 	margin: 20px 0 0 0;
+
+	&--v2 {
+		width: 100%;
+		float: left;
+	}
 }
 
 .checkbox{ 
@@ -114,5 +119,9 @@
 @media screen and (min-width:768px) {
 	.form-group{
 		margin: 40px 0 0 0;
+
+		&--v2 {
+			margin-top: 60px;
+		}
 	}
 }
