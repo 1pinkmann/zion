@@ -1,0 +1,142 @@
+.calculator {
+
+    &__form {
+        display: flex;
+        min-height: 720px;
+        border: 1px solid rgba(0, 0, 0, 0.5);
+        margin-top: 10px;
+    }
+
+    &__left-column {
+        width: 45%;
+        border-right: 1px solid rgba(0, 0, 0, 0.5);
+        padding: 30px  50px 30px 50px;
+    }
+
+    &__right-column {
+        width: 55%;
+        padding: 44px 100px 44px 100px;
+    }
+
+    &__title {
+        float: unset;
+        width: auto;
+        font-size: 40px;
+        padding-left: 64px;
+    }
+
+    &__desc {
+        font-size: 18px;
+        margin: 0;
+    }
+
+    &__input-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__input-wrapper--1 {
+        margin-top: 20px;
+    }
+
+    &__text {
+        font-family: $secondary-font;
+        line-height: 1;
+        font-size: 64px;
+        letter-spacing: -0.015em;
+    }
+
+    &__text--bold {
+        font-weight: 500;
+    }
+
+    &__text-wrapper {
+        margin-top: 49px;
+    }
+
+    &__inputs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__input-wrapper {
+        position: relative;
+    }
+
+    &__input-wrapper.disabled {
+        pointer-events: none;
+    }
+
+    &__input-wrapper input, &__input-wrapper .nice-select {
+        font-weight: 700;
+    }
+
+    &__inputs &__input-wrapper:nth-child(1), 
+    &__inputs &__input-wrapper:nth-child(2) {
+        width: 48%;
+    }
+
+    &__inputs &__input-wrapper:nth-child(3) {
+        width: 100%;
+        margin-top: 32px;
+    }
+
+    &__input-wrapper-text {
+        margin-bottom: 10px;
+        padding-left: 18px;
+        font-size: 15px;
+        letter-spacing: -0.015em;
+        color: rgba(0, 0, 0, 0.8);
+    }
+
+    &__result {
+        margin-top: 37px;
+        text-align: center;
+    }
+
+    &__result &__text {
+        font-size: 30px;
+    }
+
+    &__result &__text--bold  {
+        font-size: 45px;
+    }
+
+    &__submit-btn {
+        margin-top: 35px;
+    }
+
+    &__image {
+        margin-top: 38px;
+        width: 100%;
+    }
+
+    &__hidden {
+        margin-top: 40px;
+    }
+
+    &__checkbox {
+        display: flex;
+        font-size: 12px;
+        margin-top: 53px;
+    }
+
+    &__checkbox input[type="checkbox"] + .checkbox-label:before {
+        top: 3px;
+    }
+
+    &__hidden-text {
+        margin-bottom: 30px;
+        font-family: $base-font;
+        font-weight: 700;
+        font-size: 12px;
+    }
+
+    &__error {
+        color: red;
+        position: absolute;
+        top: 100%;
+        left: 0;
+    }
+}
