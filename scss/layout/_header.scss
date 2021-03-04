@@ -126,6 +126,10 @@ header{
 			
 		}
 	}
+
+	.header-bottom-wrapper {
+		position: relative;
+	}
 	
 	.navigation{
 		width: auto;
@@ -161,8 +165,12 @@ header{
 				}
 			}
 		}
+
+		&__link {
+			cursor: pointer;
+		}
 	}
-	
+
 	.header-contact{
 		width: auto;
 		float: right;
