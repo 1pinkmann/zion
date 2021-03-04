@@ -8860,6 +8860,10 @@ a.text-dark:hover, a.text-dark:focus {
     cursor: pointer;
     float: left; }
 
+@media (min-width: 992px) {
+  .pushy {
+    width: 20%; } }
+
 /* Button */
 .btn-primary {
   background: linear-gradient(to right, #0F2027 0%, #203A43 51.47%, #2C5364 99.82%);
@@ -10678,7 +10682,9 @@ ul {
       font-size: 20px;
       line-height: 30px; }
   #middle.mobile-pad {
-    padding-top: 0; } }
+    padding-top: 0; }
+  body.pushy-active {
+    overflow: auto; } }
 
 @media screen and (min-width: 1200px) {
   .car-gray-box h2 {
