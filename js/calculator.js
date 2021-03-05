@@ -201,7 +201,7 @@ class Calculator {
                 'Phone': this.phone.value
             }
     
-            fetch('https://formspree.io/f/xoqpozlj', {
+            fetch('https://formspree.io/f/xjvpqdzp', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json', // отправляемые данные 
