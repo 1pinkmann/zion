@@ -10680,7 +10680,8 @@ ul {
   width: 100%;
   padding: 0 0 70px; }
   .box-info-row .box-column {
-    padding-top: 45px; }
+    padding-top: 45px;
+    transform: unset !important; }
   .box-info-row .box-image {
     width: 100%; }
     .box-info-row .box-image img {
@@ -10987,20 +10988,16 @@ ul {
 /* Layout */
 /* Header */
 header {
-  display: flex;
-  flex-direction: column;
   width: 100%;
+  float: left;
   background: #000;
   z-index: 100;
   position: fixed; }
   header .header-top-mobile {
-    display: flex;
-    justify-content: space-between;
     width: 100%;
+    float: left;
     padding: 30px 15px;
-    border-bottom: 1px solid #3e3e3e;
-    z-index: 10;
-    position: relative; }
+    border-bottom: 1px solid #3e3e3e; }
     header .header-top-mobile .mobile-logo {
       width: auto;
       float: left;
