@@ -10987,6 +10987,8 @@ ul {
 /* Layout */
 /* Header */
 header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background: #000;
   z-index: 100;
