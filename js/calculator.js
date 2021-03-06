@@ -38,7 +38,7 @@ class Calculator {
         this.selectCarWrapper.addEventListener('click', this.handleSelectCarClick);
         this.rightColumnInputs.addEventListener('click', this.handleRightColumnInputsClick);
         this.calculateButton.addEventListener('click', this.handleCalculate);
-        // this.submitButton.addEventListener('click', this.handleSubmit);
+        this.submitButton.addEventListener('click', this.handleSubmit);
         [this.name, this.phone].forEach(input => {
             input.addEventListener('input',  this.handleInput);
         })
