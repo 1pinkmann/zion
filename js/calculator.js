@@ -76,9 +76,11 @@ class Calculator {
                 this.tradeInWrapper.classList.remove('disabled');
                 this.carImage.src = `./images/cars/${targetValue.textContent}.png`;
                 this.carImage.style.display = 'block';
-                let priceValue = targetValue.getAttribute('data-value');
+                this.carName = targetValue.getAttribute('data-value');
+                let priceValue = cars.find(item => item.name === this.carName).price;
                 this.carPrice.textContent = priceValue;
                 this.selectedValue = priceValue;
+               
                 if (this.calculated === false) {
                     this.mounthly.textContent = this.calculateMounthly();
                 }
@@ -163,7 +165,7 @@ class Calculator {
 
     initSelectCarOptions() {
         cars.forEach(car => {
-            this.selectCar.options[this.selectCar.options.length] = new Option(car.name, car.price);
+            this.selectCar.options[this.selectCar.options.length] = new Option(car.name, car.name);
         })
     }
 
@@ -207,7 +209,7 @@ class Calculator {
             this.showErrors(document.querySelectorAll('[data-error]'))
         } else if (this.name.value && this.phone.value && this.checkbox.checked) {
             this.data = {
-                'Car name': this.selectedValue,
+                'Car name': this.carName,
                 'Loan period': this.period,
                 'Trade in': this.tradeIn ? 'Yes' : 'No',
                 'Details': this.details.value,
