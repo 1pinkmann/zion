@@ -6,8 +6,10 @@ header{
 	position: fixed;
 	
 	.header-top-mobile{
+		display: flex;
+    	justify-content: space-between;
 		width: 100%;
-		float: left;
+		//float: left;
 		padding: 30px 15px;
 		border-bottom: 1px solid #3e3e3e;
 		z-index: 10;
