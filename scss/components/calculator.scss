@@ -107,6 +107,10 @@
         margin-top: 35px;
     }
 
+    &__submit-btn .submitMessage .button-text span {
+        transition: all 0.2s ease;
+    }
+
     &__image {
         margin-top: 38px;
         width: 100%;

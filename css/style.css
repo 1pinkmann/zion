@@ -9941,6 +9941,9 @@ button.complete .successMessage svg {
 .calculator__submit-btn {
   margin-top: 35px; }
 
+.calculator__submit-btn .submitMessage .button-text span {
+  transition: all 0.2s ease; }
+
 .calculator__image {
   margin-top: 38px;
   width: 100%; }

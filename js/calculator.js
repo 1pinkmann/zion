@@ -199,6 +199,10 @@ class Calculator {
             this.checkboxError();
         }
 
+        this.submitButton.style.pointerEvents = 'none';
+        this.submitButton.classList.remove('ready');
+        this.submitButton.classList.add('loading');
+
         if (!this.name.value && !this.phone.value) {
             this.showErrors(document.querySelectorAll('[data-error]'))
         } else if (this.name.value && this.phone.value && this.checkbox.checked) {
@@ -210,23 +214,24 @@ class Calculator {
                 'Name': this.name.value,
                 'Phone': this.phone.value
             }
-            // https://formspree.io/f/xjvpqdzp
-            fetch('../ajax.php', {
+
+            fetch('https://formspree.io/f/xjvpqdzp', {
                 method: 'post',
                 headers: {
-                    'Content-Type': 'application/json', // отправляемые данные 
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(this.data)
             }).then(response => {
-                this.submitButton.classList.remove('ready');
+                this.submitButton.classList.remove('loading');
                 this.submitButton.classList.add('complete');
                 setTimeout(() => {
                     this.submitButton.classList.remove('complete');
                     this.submitButton.classList.add('ready');
                     this.hiddenWrapper.style.display = 'none';
                     this.calculateButton.style.display = 'block';
+                    this.submitButton.style.pointerEvents = 'all';
                     this.clearForm();
-                }, 5000);
+                }, 4000);
             })
         }
         
