@@ -15,7 +15,8 @@
         <div class="mobile-car-btn">
             <button class="pushy-menu-btn"></button>
         </div>
-        <div class="mobile-logo"><a href="@@path./index.html"><img src="@@path./images/logo-icon.png" alt="" /></a></div>
+        <div class="mobile-logo"><a href="@@path./index.html"><img src="@@path./images/logo-icon.png" alt="" /></a>
+        </div>
         <div class="menu-icon">
             <button class="cd-dropdown-trigger" id="mobile-menu-open"></button>
         </div>
@@ -44,10 +45,12 @@
                                     <h3 class="dropdown__title">Our Services</h3>
                                     <ul class="dropdown__list" data-submenu-list>
                                         <li class="dropdown__item" data-submenu-item>
-                                            <a href="@@path./our-workshop.html" class="dropdown__link">Service Centre</a>
+                                            <a href="@@path./our-workshop.html" class="dropdown__link">Service
+                                                Centre</a>
                                         </li>
                                         <li class="dropdown__item" data-submenu-item>
-                                            <a href="@@path./our-promotion.html" class="dropdown__link">Our Promotion</a>
+                                            <a href="@@path./our-promotion.html" class="dropdown__link">Our
+                                                Promotion</a>
                                         </li>
                                         <li class="dropdown__item" data-submenu-item>
                                             <a href="#" class="dropdown__link">Bespoke Cars</a>
@@ -78,7 +81,14 @@
                 <div class="header-contact">
                     <a href="@@path./contact-us.html" class="appointment-btn">Book An Appointment</a>
                     <div class="menu-logo"><img src="@@path./images/logo-2.png" alt="" /></div>
-                    <div class="menu-time">Mon - Fri (10am - 7pm): <a href="tel:+6564552535">+65 6455 2535</a></div>
+                    <div class="menu-time">
+                        @@if (context.workshop){
+                            Mon-Sat (9am - 6pm): <a href="tel:+6564525155">&nbsp;+65 6452 5155</a>
+                        } 
+                        @@if (!context.workshop) {
+                            Mon - Fri (10am - 7pm):<a href="tel:+6564552535">&nbsp;+65 6455 2535</a>
+                        }
+                    </div>
                     <div class="menu-address">159 Sin Ming Road #01-01/04<br>
                         Armtech Building Singapore 575625</div>
                 </div>

@@ -15,18 +15,11 @@
     </div>
     <!--- /Search -->
 
-    <!--- Mobile & Tablet Menu -->
-    @@include('./templates/mobileMenu.html', {
-    'page': 'about',
-    'path': ''
-    })
-    <!--- Mobile & Tablet Menu -->
-
     <!--- Car Menu -->
     @@include('./templates/car-menu.html', {
-        'path': './all-cars',
-        'imgPath': ''
-        })
+    'path': './all-cars',
+    'imgPath': ''
+    })
     <!--- /Car Menu -->
 
     <div id="wrapper">
@@ -66,10 +59,25 @@
                             experience for you at Zion Auto Gallery.
                         </p>
                     </div>
-                    <div class="page-banner__images">
-                        <img src="./images/services/image1.png" alt="image" class="page-banner__image">
-                        <img src="./images/services/image2.png" alt="image" class="page-banner__image">
-                        <img src="./images/services/image3.png" alt="image" class="page-banner__image">
+                    <div class="mission-image">
+                        <div class="row">
+                            <div class="col-md-4" data-aos="flip-left">
+                                <img src="images/services/image1.png" alt="" class="img-fluid d-block m-auto" />
+                            </div>
+                            <div class="col-md-4" data-aos="flip-up">
+                                <img src="images/mission-image-2.jpg" alt="" class="img-fluid d-block m-auto" />
+                            </div>
+                            <div class="col-md-4" data-aos="flip-right">
+                                <img src="images/mission-image-3.jpg" alt="" class="img-fluid d-block m-auto" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission-image-mobile-slider">
+                        <ul class="owl-carousel" id="mission-mobile-slider">
+                            <li><img src="images/services/image1.png" alt="" /></li>
+                            <li><img src="images/mission-image-2.jpg" alt="" /></li>
+                            <li><img src="images/mission-image-3.jpg" alt="" /></li>
+                        </ul>
                     </div>
                     <p class="page-banner__text page-banner__wrapper">
                         Once a client selects an automobile from our shop floor, we work diligently to refine the
@@ -123,7 +131,8 @@
                             </div>
                             <div class="col-md-4" data-aos="zoom-in">
                                 <div class="information-box-icon"><img src="images/icon-financial-services.png"
-                                        alt="" /></div>
+                                        alt="" />
+                                </div>
                                 <h3>Financial Services</h3>
                                 <p>In-house/Bank Financing,Motor Insurance, Corporate Fleet Managament,
                                     Sales/Purchase
@@ -211,7 +220,8 @@
                                                     <button type="submit" name="submit" id="button"
                                                         class="ready fancy btn btn-primary" value="Book Now">
                                                         <div class="message submitMessage"> <span
-                                                                class="button-text">Book Now</span> </div>
+                                                                class="button-text">Book
+                                                                Now</span> </div>
                                                         <div class="message loadingMessage">
                                                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
                                                                 <circle class="loadingCircle" cx="2.2" cy="10"
@@ -247,7 +257,9 @@
         </div>
 
         <!--- Footer -->
-        @@include('./templates/footer.html')
+        @@include('./templates/footer.html', {
+        'path': ''
+        })
         <!--- /Footer -->
 
     </div>

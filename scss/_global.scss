@@ -16,6 +16,16 @@ body{
 	}
 }
 
+@media (pointer: coarse) {
+
+	body {
+
+		&.pushy-active {
+			margin-right: 0;
+		}
+	}
+}
+
 #wrapper{
 	width: 100%;
 	float: left;

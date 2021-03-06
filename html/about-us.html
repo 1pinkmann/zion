@@ -15,13 +15,6 @@
   </div>
   <!--- /Search -->
 
-  <!--- Mobile & Tablet Menu -->
-  @@include('./templates/mobileMenu.html', {
-  'page': 'about',
-  'path': ''
-  })
-  <!--- Mobile & Tablet Menu -->
-
   <!--- Car Menu -->
   @@include('./templates/car-menu.html', {
     'path': './all-cars',
@@ -365,7 +358,9 @@
     </div>
 
     <!--- Footer -->
-    @@include('./templates/footer.html')
+    @@include('./templates/footer.html', {
+      'path': ''
+    })
     <!--- /Footer -->
 
   </div>

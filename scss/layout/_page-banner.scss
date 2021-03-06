@@ -24,6 +24,11 @@
         margin-bottom: 87px;
     }
 
+    .mission-image, .mission-image-mobile-slider {
+        margin-bottom: 87px;
+        padding-top: 0;
+    }
+
     &__image {
         width: calc(33% - 10px);
     }
@@ -108,6 +113,10 @@
         &__images{
             margin-bottom: 50px;
         }
+
+        .mission-image, .mission-image-mobile-slider {
+            margin-bottom: 50px;
+        }
     }
 }  
 
@@ -133,6 +142,10 @@
 
         &__images {
             flex-direction: column;
+            margin-bottom: 30px;
+        }
+
+        .mission-image, .mission-image-mobile-slider {
             margin-bottom: 30px;
         }
 

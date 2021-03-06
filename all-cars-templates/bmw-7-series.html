@@ -16,13 +16,6 @@
   </div>
   <!--- /Search -->
 
-  <!--- Mobile & Tablet Menu -->
-  @@include('../html/templates/mobileMenu.html', {
-  'page': 'cars',
-  'path': '.'
-  })
-  <!--- Mobile & Tablet Menu -->
-
   <!--- Car Menu -->
   @@include('../html/templates/car-menu.html', {
     'path': '.',
@@ -449,7 +442,9 @@
     </div>
 
     <!--- Footer -->
-    @@include('../html/templates/footer.html')
+    @@include('../html/templates/footer.html', {
+      'path': '.'
+    })
     <!--- /Footer -->
 
   </div>
@@ -472,7 +467,9 @@
       }, 1000);
     });	
   </script>
-  @@include('../html/templates/linkedIn.html')
+  @@include('../html/templates/linkedIn.html', {
+    'path': '.'
+  })
 </body>
 
 </html>

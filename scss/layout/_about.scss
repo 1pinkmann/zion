@@ -49,20 +49,19 @@
 		margin: 20px 0 0 0;
 		font-family: $secondary-font-2;
 	}
-	
-	.mission-image{
-		width: 100%;
-		float: left;
-		padding: 40px 0 0 0;
-		display: none;
-	}
-	
-	.mission-image-mobile-slider{
-		width: 100%;
-		float: left;
-		padding: 50px 0 0 0;
-	}
+}
 
+.mission-image{
+	width: 100%;
+	float: left;
+	padding: 40px 0 0 0;
+	display: none;
+}
+
+.mission-image-mobile-slider{
+	width: 100%;
+	float: left;
+	padding: 50px 0 0 0;
 }
 
 .about-information-section{
@@ -191,14 +190,12 @@
 		}
 	}
 	
-	.mission-section{
-		.mission-image{
-			display: inherit; 
-		}
-		
-		.mission-image-mobile-slider{
-			display: none;
-		}
+	.mission-image{
+		display: inherit; 
+	}
+	
+	.mission-image-mobile-slider{
+		display: none;
 	}
 		
 	

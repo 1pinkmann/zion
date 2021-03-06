@@ -8860,7 +8860,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 @media (min-width: 992px) {
   .pushy {
-    width: 20%; } }
+    width: 30%; } }
 
 /* Button */
 .btn-primary {
@@ -10458,6 +10458,10 @@ body {
     opacity: 1;
     visibility: visible; }
 
+@media (pointer: coarse) {
+  body.pushy-active {
+    margin-right: 0; } }
+
 #wrapper {
   width: 100%;
   float: left; }
@@ -12003,15 +12007,17 @@ footer {
     float: left;
     margin: 20px 0 0 0;
     font-family: "Roboto"; }
-  .mission-section .mission-image {
-    width: 100%;
-    float: left;
-    padding: 40px 0 0 0;
-    display: none; }
-  .mission-section .mission-image-mobile-slider {
-    width: 100%;
-    float: left;
-    padding: 50px 0 0 0; }
+
+.mission-image {
+  width: 100%;
+  float: left;
+  padding: 40px 0 0 0;
+  display: none; }
+
+.mission-image-mobile-slider {
+  width: 100%;
+  float: left;
+  padding: 50px 0 0 0; }
 
 .about-information-section {
   width: 100%;
@@ -12098,9 +12104,9 @@ footer {
       font-size: 20px;
       line-height: 28px;
       margin: 0 0 25px; }
-  .mission-section .mission-image {
+  .mission-image {
     display: inherit; }
-  .mission-section .mission-image-mobile-slider {
+  .mission-image-mobile-slider {
     display: none; } }
 
 @media screen and (min-width: 992px) {
@@ -12741,6 +12747,9 @@ footer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 87px; }
+  .page-banner .mission-image, .page-banner .mission-image-mobile-slider {
+    margin-bottom: 87px;
+    padding-top: 0; }
   .page-banner__image {
     width: calc(33% - 10px); }
 
@@ -12791,6 +12800,8 @@ footer {
     .page-banner--v2 .page-banner__text--mb-2 {
       margin-bottom: 50px; }
     .page-banner__images {
+      margin-bottom: 50px; }
+    .page-banner .mission-image, .page-banner .mission-image-mobile-slider {
       margin-bottom: 50px; } }
 
 @media (max-width: 767px) {
@@ -12805,6 +12816,8 @@ footer {
 @media (max-width: 619px) {
   .page-banner__images {
     flex-direction: column;
+    margin-bottom: 30px; }
+  .page-banner .mission-image, .page-banner .mission-image-mobile-slider {
     margin-bottom: 30px; }
   .page-banner__image {
     width: 100%; }
