@@ -10,6 +10,8 @@ header{
 		float: left;
 		padding: 30px 15px;
 		border-bottom: 1px solid #3e3e3e;
+		z-index: 10;
+		position: relative;
 		
 		.mobile-logo{
 			width: auto;

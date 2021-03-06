@@ -10999,7 +10999,9 @@ header {
     width: 100%;
     float: left;
     padding: 30px 15px;
-    border-bottom: 1px solid #3e3e3e; }
+    border-bottom: 1px solid #3e3e3e;
+    z-index: 10;
+    position: relative; }
     header .header-top-mobile .mobile-logo {
       width: auto;
       float: left;
