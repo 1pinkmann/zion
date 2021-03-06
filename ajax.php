@@ -6,58 +6,77 @@ use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
 
-if (isset($_POST['submit']) && $_POST['submit'] == 'Book Now') {
-    $data = $_POST;
+$mail = new PHPMailer;
+$mail->CharSet = 'utf-8';
 
-    $emailcontent = file_get_contents('email/enquiry.html');
+$name = $_POST['period'];
 
-    $emailcontent = str_replace(array(
-        '{first_name}',
-        '{last_name}',
-        '{email}',
-        '{phone}',
-        '{enquiry_type}'
-    ),
-        array(
-            $data['first_name'],
-            $data['last_name'],
-            $data['email'],
-            $data['phone'],
-            $data['enquiry_type']
-        ), $emailcontent);
+$mail->isSMTP();
+$mail->Host = 'smtp.gmail.com'
+$mail->Host = 'smtp.gmail.com';
+$mail->SMTPAuth = true;
+$mail->Username = 'pinkmann.music@gmail.com';
+$mail->Password = 'tahetu90';
+$mail->SMTPSecure = 'ssl';
+$mail->Port = 587;
 
-    $carModel = isset($data['car_model']) ? "<p>Car Model: ".$data['car_model']."</p>" : '';
+$mail->setFrom('pinkmann.music@gmail.com');
+$mail->addAddress('korgov.vova@icloud.com');
+$mail->isHTML(true);
+$mail->Subject = 'New inquiry submission at Zion Auto Gallery';
+$mail->Body = $name;
+$mail->send();
 
-    $emailcontent = str_replace('{car_model}', $carModel, $emailcontent);
+// if (isset($_POST['submit']) && $_POST['submit'] == 'Book Now') {
+//     $data = $_POST;
 
-    $mail = new PHPMailer(true);
+//     $emailcontent = file_get_contents('email/enquiry.html');
 
-    $mail->isSMTP();
-    $mail->Host = 'smtp.gmail.com';
-    $mail->SMTPAuth = true;
-    // $mail->Username = 'zionautogallerysg@gmail.com';
-    $mail->Username = 'pinkmann.music@gmail.com';
-    // $mail->Password = 'imadnwggsnqxoqcm';
-    $mail->Password = 'tahetu90';
-    $mail->Port = 587;
+//     $emailcontent = str_replace(array(
+//         '{first_name}',
+//         '{last_name}',
+//         '{email}',
+//         '{phone}',
+//         '{enquiry_type}'
+//     ),
+//         array(
+//             $data['first_name'],
+//             $data['last_name'],
+//             $data['email'],
+//             $data['phone'],
+//             $data['enquiry_type']
+//         ), $emailcontent);
 
-    $mail->setFrom('pinkmann.music@gmail.com', 'Zion Auto');
-    $mail->addAddress('korgov.vova@icloud.com');
-    $mail->addCC('sales@zionauto.sg');
-    // $mail->addCC('cc@example.com'); <- FOR CC OTHERS
-    $mail->addReplyTo('no-reply@zionauto.sg', 'Zion Auto');
-    $mail->isHTML(true);
-    $mail->Subject = 'New inquiry submission at Zion Auto Gallery';
-    $mail->Body = $emailcontent;
-    $mail->send();
+//     $carModel = isset($data['car_model']) ? "<p>Car Model: ".$data['car_model']."</p>" : '';
+
+//     $emailcontent = str_replace('{car_model}', $carModel, $emailcontent);
+
+//     $mail = new PHPMailer(true);
+
+//     $mail->isSMTP();
+//     $mail->Host = 'smtp.gmail.com';
+//     $mail->SMTPAuth = true;
+//     $mail->Username = 'zionautogallerysg@gmail.com';
+//     $mail->Password = 'imadnwggsnqxoqcm';
+//     $mail->Port = 587;
+
+//     $mail->setFrom('no-reply@zionauto.sg', 'Zion Auto');
+//     $mail->addAddress('edwin@zionauto.sg');
+//     $mail->addCC('sales@zionauto.sg');
+//     // $mail->addCC('cc@example.com'); <- FOR CC OTHERS
+//     $mail->addReplyTo('no-reply@zionauto.sg', 'Zion Auto');
+//     $mail->isHTML(true);
+//     $mail->Subject = 'New inquiry submission at Zion Auto Gallery';
+//     $mail->Body = $emailcontent;
+//     $mail->send();
 
 
-//    $headers = "MIME-Version: 1.0" . "\r\n";
-//    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
-//    $headers .= 'From: <no-reply@zionauto.sg>' . "\r\n";
-//
-//    // mail('edwin@zionauto.sg', "New inquiry submission at Zion Auto Gallery", $emailcontent, $headers);
-//    mail('edwin@zionauto.sg', "New inquiry submission at Zion Auto Gallery", $emailcontent, $headers);
+// //    $headers = "MIME-Version: 1.0" . "\r\n";
+// //    $headers .= "Content-type:text/html;charset=UTF-8" . "\r\n";
+// //    $headers .= 'From: <no-reply@zionauto.sg>' . "\r\n";
+// //
+// //    // mail('edwin@zionauto.sg', "New inquiry submission at Zion Auto Gallery", $emailcontent, $headers);
+// //    mail('edwin@zionauto.sg', "New inquiry submission at Zion Auto Gallery", $emailcontent, $headers);
 
-    echo json_encode(array('success' => true));
-}
+//     echo json_encode(array('success' => true));
+// }
