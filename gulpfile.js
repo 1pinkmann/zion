@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 const fileinclude = require('gulp-file-include');
 const sass = require('gulp-sass');
+const del = require('del');
  
 gulp.task('sass-compile', function(){
     return gulp.src('./scss/style.scss')
@@ -14,7 +15,7 @@ gulp.task('html', async function() {
                 prefix: '@@',
                 basepath: '@file'
             }))
-        .pipe(gulp.dest('./'))
+        .pipe(gulp.dest('./'));
 });
 
 gulp.task('allCars', async function() {
@@ -23,11 +24,16 @@ gulp.task('allCars', async function() {
                 prefix: '@@',
                 basepath: '@file'
             }))
-        .pipe(gulp.dest('./all-cars'))
+        .pipe(gulp.dest('./all-cars'));
+});
+
+gulp.task('clean', function(){
+    return del('./templates', {force:true});
 });
 
 gulp.task('watch', function() {
     gulp.watch('./html/**/*.html', gulp.series('html'));
     gulp.watch('./all-cars-templates/**/*.html', gulp.series('allCars'));
+    gulp.watch('./**/*.html', gulp.series('clean'));
     gulp.watch('./scss/**/*.scss', gulp.series('sass-compile'));
 })
