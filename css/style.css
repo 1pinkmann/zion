@@ -10536,6 +10536,13 @@ a, button, input {
   a:focus, a:active, a.nice-select.open, button:focus, button:active, button.nice-select.open, input:focus, input:active, input.nice-select.open {
     outline: none !important; }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* display: none; <- Crashes Chrome on hover */
+  -webkit-appearance: none;
+  margin: 0;
+  /* <-- Apparently some margin are still there even though it's hidden */ }
+
 ul {
   margin: 0;
   padding: 0;
