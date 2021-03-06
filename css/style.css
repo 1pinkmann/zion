@@ -7867,29 +7867,29 @@ a.text-dark:hover, a.text-dark:focus {
     transition-property: transform;
     transition-property: transform,-webkit-transform; }
   html:not(.no-js) [data-aos=flip-left] {
-    -webkit-transform: rotateY(-100deg);
-    transform: rotateY(-100deg); }
+    -webkit-transform: perspective(2500px) rotateY(-100deg);
+    transform: perspective(2500px) rotateY(-100deg); }
   html:not(.no-js) [data-aos=flip-left].aos-animate {
     -webkit-transform: rotateY(0);
-    transform: rotateY(0); }
+    transform: perspective(2500px) rotateY(0); }
   html:not(.no-js) [data-aos=flip-right] {
-    -webkit-transform: rotateY(100deg);
-    transform: rotateY(100deg); }
+    -webkit-transform: perspective(2500px) rotateY(100deg);
+    transform: perspective(2500px) rotateY(100deg); }
   html:not(.no-js) [data-aos=flip-right].aos-animate {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0); }
+    -webkit-transform: perspective(2500px) rotateY(0);
+    transform: perspective(2500px) rotateY(0); }
   html:not(.no-js) [data-aos=flip-up] {
-    -webkit-transform: rotateX(-100deg);
-    transform: rotateX(-100deg); }
+    -webkit-transform: perspective(2500px) rotateX(-100deg);
+    transform: perspective(2500px) rotateX(-100deg); }
   html:not(.no-js) [data-aos=flip-up].aos-animate {
-    -webkit-transform: rotateX(0);
-    transform: rotateX(0); }
+    -webkit-transform: perspective(2500px) rotateX(0);
+    transform: perspective(2500px) rotateX(0); }
   html:not(.no-js) [data-aos=flip-down] {
-    -webkit-transform: rotateX(100deg);
-    transform: rotateX(100deg); }
+    -webkit-transform: perspective(2500px) rotateX(100deg);
+    transform: perspective(2500px) rotateX(100deg); }
   html:not(.no-js) [data-aos=flip-down].aos-animate {
-    -webkit-transform: rotateX(0);
-    transform: rotateX(0); } }
+    -webkit-transform: perspective(2500px) rotateX(0);
+    transform: perspective(2500px) rotateX(0); } }
 
 /* Nice Select */
 .nice-select {
@@ -10541,7 +10541,8 @@ ul {
   text-align: center; }
 
 #middle {
-  width: 100%; }
+  width: 100%;
+  float: left; }
   #middle.mobile-pad {
     padding-top: 84px; }
 
@@ -10678,11 +10679,14 @@ ul {
 
 .box-info-row {
   width: 100%;
-  padding: 0 0 70px; }
+  float: left;
+  padding: 0 0 70px;
+  transform: translate3d(0, 0, 0); }
   .box-info-row .box-column {
     padding-top: 45px; }
   .box-info-row .box-image {
-    width: 100%; }
+    width: 100%;
+    float: left; }
     .box-info-row .box-image img {
       width: 100%; }
   .box-info-row h3 {

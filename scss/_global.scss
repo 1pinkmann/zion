@@ -114,7 +114,7 @@ ul{
 
 #middle{
 	width: 100%;
-	//float: left;
+	float: left;
 	
 	&.mobile-pad{
 		padding-top: 84px;
@@ -291,8 +291,9 @@ ul{
 
 .box-info-row{
 	width: 100%;
-	//float: left;
+	float: left;
 	padding: 0 0 70px;
+	transform: translate3d(0,0,0);
 	
 	.box-column{
 		padding-top: 45px;
@@ -300,7 +301,7 @@ ul{
 	
 	.box-image{
 		width: 100%;
-		//float: left;
+		float: left;
 		
 		img{
 			width: 100%;
