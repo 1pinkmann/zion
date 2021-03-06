@@ -2,6 +2,10 @@
 	width: 100%;
 	float: left;
 	overflow: hidden;
+
+	&--mt {
+		margin-top: 222px;
+	}
 	
 	&.bottom-pad{
 		padding-bottom: 80px;
@@ -260,6 +264,13 @@
 			margin-top: 15px;
 			margin-left: 0;
 		}
+	}
+}
+
+@media (max-width: 991px) {
+
+	.appointment-section--mt {
+		margin-top: 100px;
 	}
 }
 

@@ -101,7 +101,7 @@ header{
 		float: left;
 		border-top: 1px solid #3e3e3e;
 		padding: 30px 0;
-		display: none;
+		
 		background: $black-color;
 		 
 		.logo-icon{
@@ -109,6 +109,7 @@ header{
 			float: left;
 			display: none;
 			margin: -5px 40px -5px 0;
+			z-index: 1;
 			
 			img{
 				max-height: 45px;
@@ -119,10 +120,6 @@ header{
 			position: fixed;
 			top: 0;
 			left: 0;
-			
-			.logo-icon{
-				display:block;
-			}
 			
 		}
 	}
@@ -143,6 +140,7 @@ header{
 				width: auto;
 				float: left;
 				padding: 0 14px;
+				position: relative;
 				
 				&:first-child{
 					padding-left: 0;
@@ -151,17 +149,22 @@ header{
 				a{
 					color: $white-color;
 					text-decoration: none;
-					
-					&:hover{
-						color: $red-color;
-						text-decoration: none;
-					}
 				}
 				
 				&.active{
 					a{
 						font-weight: bold;
 					}
+				}
+
+				// &:hover .dropdown {
+				// 	opacity: 1;
+				// 	visibility: visible;
+				// }
+
+				&:hover > a {
+					color: $red-color;
+					text-decoration: none;
 				}
 			}
 		}
@@ -188,6 +191,10 @@ header{
 				text-decoration: none;
 			}
 		}
+	}
+
+	.appointment-btn, .menu-address, .menu-logo {
+		display: none;	
 	}
 }
 
@@ -312,8 +319,8 @@ header{
 		.header-top{
 			display: inherit;
 		}
-		
-		.header-top-mobile{
+
+		.header-top-mobile {
 			display: none;
 		}
 		
@@ -342,6 +349,174 @@ header{
 		.header-contact{
 			font-size: 18px;
 		}
+	}
+}
+
+@media (max-width: 991px) {
+
+	header {
+
+		.header-bottom {
+			width: 100%;
+			height: 100%;
+			position: fixed;
+			top: 0;
+			left: 0;
+			float: unset;
+			padding: 0;
+	
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			z-index: 1000000;
+			visibility: hidden;
+			-webkit-backface-visibility: hidden;
+			backface-visibility: hidden;
+			-webkit-transform: translateZ(0);
+			-moz-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+			transform: translateZ(0);
+			-webkit-transform: translateY(-100%);
+			-moz-transform: translateY(-100%);
+			-ms-transform: translateY(-100%);
+			-o-transform: translateY(-100%);
+			transform: translateY(-100%);
+			-webkit-transition: -webkit-transform .5s 0s, visibility 0s .5s;
+			-moz-transition: -moz-transform .5s 0s, visibility 0s .5s;
+			transition: transform .5s 0s, visibility 0s .5s;
+		}
+	
+		.header-bottom.dropdown-is-active {
+			visibility: visible;
+			-webkit-transform: translateY(0);
+			-moz-transform: translateY(0);
+			-ms-transform: translateY(0);
+			-o-transform: translateY(0);
+			transform: translateY(0);
+			-webkit-transition: -webkit-transform .5s 0s, visibility 0s 0s;
+			-moz-transition: -moz-transform .5s 0s, visibility 0s 0s;
+			transition: transform .5s 0s, visibility 0s 0s;
+		  }
+	
+		.header-bottom .header-bottom-wrapper {
+			width: 100%;
+			height: 100%;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			padding: 0;
+		}
+	
+		.header-bottom .logo-icon {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: relative;
+			height: 262px;
+			width: 100%;
+			margin: 0;
+			background: #000000;
+		}
+	
+		.header-bottom .logo-icon:after{
+			width: 100%;
+			height: 6px;
+			content: "";
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			background: linear-gradient(90deg,#d40404 0,#0303f0 100%);
+			background-size: 300% 300%;
+			animation: gradient 4s ease infinite;
+		}
+	
+		.header-bottom .logo-icon img {
+			max-height: 63px;
+		}
+	
+		.header-bottom-outer {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			height: 100%;
+			padding-top: 285px;
+	
+			overflow-x: hidden;
+			overflow-y: auto;
+			position: absolute;
+			background: #ffffff;
+		}
+	
+		.header-bottom .navigation {
+			display: flex;
+			flex-direction: column;
+		}
+	
+		.header-bottom .navigation__list {
+			display: flex;
+			flex-direction: column;
+		}
+	
+		.header-bottom .navigation__list > li {
+			display: flex;
+			align-items: center;
+			padding: 0 15px;
+			height: 69px;
+		}
+	
+		.header-bottom .navigation__list > li:first-child {
+			display: none;
+		}
+	
+		.header-bottom .navigation__list > li > a {
+			color: #000000;
+			font-size: 26px;
+			font-family: "Corporate A";
+		}
+	
+		.header-contact a {
+			color: #000000;
+		}
+	
+		.header-contact {
+			
+			.appointment-btn, .menu-address, .menu-logo {
+				display: block;	
+			}
+		}
+
+		.menu-logo {
+			width: 100%;
+			  float: left;
+			  padding: 40px 0 0 0;
+			background: $gray-color;
+		
+			  img {
+				margin: 0 auto;
+				display: block;
+			  }
+		  }
+		
+		  .menu-time {
+			  width: 100%;
+			  float: left;
+			text-align: center;
+			  font-family: $secondary-font;
+			  color: $black-color;
+			  font-size: 15px;
+			  padding: 23px 0 0 0;
+			background: $gray-color;
+		  }
+		
+		  .menu-address {
+			width: 100%;
+			  float: left;
+			  text-align: center;
+			  font-family: $secondary-font;
+			  color: $black-color;
+			  font-size: 15px;
+			padding: 23px 0 30px 0;
+			background: $gray-color;
+		  }
 	}
 }
 

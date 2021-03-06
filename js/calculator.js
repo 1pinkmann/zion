@@ -33,6 +33,7 @@ class Calculator {
         this.calculated = true;
         this.tradeIn = '';
         this.initSelectCarOptions();
+        this.initBinds();
 
         this.selectCarWrapper.addEventListener('click', this.handleSelectCarClick);
         this.rightColumnInputs.addEventListener('click', this.handleRightColumnInputsClick);
@@ -44,7 +45,16 @@ class Calculator {
         this.checkbox.addEventListener('click', this.handleCheckbox);
     }
 
-    handleSelectCarClick = (e) => {
+    initBinds() {
+        this.handleSelectCarClick = this.handleSelectCarClick.bind(this);
+        this.handleRightColumnInputsClick = this.handleRightColumnInputsClick.bind(this);
+        this.handleCalculate = this.handleCalculate.bind(this);
+        this.handleInput = this.handleInput.bind(this);
+        this.handleCheckbox = this.handleCheckbox.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+    }
+
+    handleSelectCarClick(e) {
 
         let targetValue = e.target.closest('[data-value]');
 
@@ -78,7 +88,7 @@ class Calculator {
         }
     }
 
-    handleRightColumnInputsClick = (e) => {
+    handleRightColumnInputsClick(e) {
 
         if (this.selectedValue) {
             let periodWrapper = e.target.closest('#period-wrapper');
@@ -112,7 +122,7 @@ class Calculator {
         }
     }
 
-    handleCalculate = () => {
+    handleCalculate() {
         this.mounthly.textContent = this.calculateMounthly();
         this.showErrors(document.querySelectorAll('[data-error][data-select]'));
     }
@@ -165,11 +175,11 @@ class Calculator {
         })
     }
 
-    handleInput = (e) => {
+    handleInput(e) {
         this.removeError(e.target.closest('[data-error]'));
     }
 
-    handleCheckbox = (e) => {
+    handleCheckbox(e) {
         let wrapper = e.target.closest('[data-checkbox-wrapper]');
         let label = wrapper.querySelector('label');
         if (this.checkbox.checked) {
@@ -183,7 +193,7 @@ class Calculator {
         label.style.color = 'red';
     }
 
-    handleSubmit = () => {
+    handleSubmit() {
 
         if (!this.checkbox.checked) {
             this.checkboxError();

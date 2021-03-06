@@ -75,58 +75,17 @@
     }
 	  
 	  &:after{
-		width: 100%;
-		height: 6px;
-		content: "";
-		position: absolute;
-		left: 0;
-		bottom: 0;
-		background: linear-gradient(90deg,#d40404 0,#0303f0 100%);
-		background-size: 300% 300%;
-		animation: gradient 4s ease infinite;
-	}
-	  
-  }
-
-  .cd-close {
-    position: absolute;
-    z-index: 1;
-    right: 0;
-    top: 205px;
-    height: 50px;
-    width: 50px;
-    overflow: hidden;
-    text-indent: 100%;
-    white-space: nowrap;
-    color: transparent;
-
-    &::after, &::before {
-      content: '';
+      width: 100%;
+      height: 6px;
+      content: "";
       position: absolute;
-      left: 50%;
-      top: 50%;
-      bottom: auto;
-      right: auto;
-      height: 20px;
-      width: 2px;
-      background-color: $white-color;
-    }
-
-    &::after {
-      -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-      -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-      -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-      -o-transform: translateX(-50%) translateY(-50%) rotate(45deg);
-      transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    }
-
-    &::before {
-      -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-      -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-      -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-      -o-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-      transform: translateX(-50%) translateY(-50%) rotate(-45deg);
-    }
+      left: 0;
+      bottom: 0;
+      background: linear-gradient(90deg,#d40404 0,#0303f0 100%);
+      background-size: 300% 300%;
+      animation: gradient 4s ease infinite;
+	  }
+	  
   }
 
   &.dropdown-is-active {
@@ -139,6 +98,49 @@
     -webkit-transition: -webkit-transform .5s 0s, visibility 0s 0s;
     -moz-transition: -moz-transform .5s 0s, visibility 0s 0s;
     transition: transform .5s 0s, visibility 0s 0s;
+  }
+}
+
+.cd-close {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  top: 205px;
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  color: transparent;
+  background-color: transparent;
+  border: none;
+
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    bottom: auto;
+    right: auto;
+    height: 20px;
+    width: 2px;
+    background-color: $white-color;
+  }
+
+  &::after {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    -o-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+  }
+
+  &::before {
+    -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    -o-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
   }
 }
 
@@ -618,40 +620,6 @@
 	}
 }
 
-.menu-logo {
-	width: 100%;
-  	float: left;
-  	padding: 40px 0 0 0;
-	background: $gray-color;
-
-  	img {
-    	margin: 0 auto;
-    	display: block;
-  	}
-}
-
-.menu-time {
-  	width: 100%;
-  	float: left;
- 	text-align: center;
-  	font-family: $secondary-font;
-  	color: $black-color;
-  	font-size: 15px;
-  	padding: 23px 0 0 0;
-	background: $gray-color;
-}
-
-.menu-address {
-	width: 100%;
-  	float: left;
-  	text-align: center;
-  	font-family: $secondary-font;
-  	color: $black-color;
-  	font-size: 15px;
-	padding: 23px 0 30px 0;
-	background: $gray-color;
-}
-
 .pushy{
 	position:fixed;
 	width:100%;
@@ -677,6 +645,39 @@
 		top: 34px; 
 	}
 	
+  .menu-logo {
+	  width: 100%;
+		float: left;
+		padding: 40px 0 0 0;
+	  background: $gray-color;
+  
+		img {
+		  margin: 0 auto;
+		  display: block;
+		}
+	}
+  
+	.menu-time {
+		width: 100%;
+		float: left;
+	  text-align: center;
+		font-family: $secondary-font;
+		color: $black-color;
+		font-size: 15px;
+		padding: 23px 0 0 0;
+	  background: $gray-color;
+	}
+  
+	.menu-address {
+	  width: 100%;
+		float: left;
+		text-align: center;
+		font-family: $secondary-font;
+		color: $black-color;
+		font-size: 15px;
+	  padding: 23px 0 30px 0;
+	  background: $gray-color;
+	}
 	
 	li{
 		width: 100%;

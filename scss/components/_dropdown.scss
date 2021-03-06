@@ -4,7 +4,8 @@
     position: absolute;
     transition: opacity 0.2s ease;
     left: 0;
-    top: 65px;
+    top: 23px;
+    padding-top: 50px;
 
     &.opened {
         opacity: 1;
@@ -12,16 +13,11 @@
     }
 
     &__wrapper {
-        width: 337px;
+        width: 420px;
         background-color: #ffffff;
         padding: 70px 46px 49px 46px;
         border-radius: 15px;
         position: relative;
-    }
-
-    &__wrapper--1 {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
     }
 
     &__title {
