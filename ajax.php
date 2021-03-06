@@ -35,12 +35,14 @@ if (isset($_POST['submit']) && $_POST['submit'] == 'Book Now') {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'zionautogallerysg@gmail.com';
-    $mail->Password = 'imadnwggsnqxoqcm';
+    // $mail->Username = 'zionautogallerysg@gmail.com';
+    $mail->Username = 'pinkmann.music@gmail.com';
+    // $mail->Password = 'imadnwggsnqxoqcm';
+    $mail->Password = 'tahetu90';
     $mail->Port = 587;
 
-    $mail->setFrom('no-reply@zionauto.sg', 'Zion Auto');
-    $mail->addAddress('edwin@zionauto.sg');
+    $mail->setFrom('pinkmann.music@gmail.com', 'Zion Auto');
+    $mail->addAddress('korgov.vova@icloud.com');
     $mail->addCC('sales@zionauto.sg');
     // $mail->addCC('cc@example.com'); <- FOR CC OTHERS
     $mail->addReplyTo('no-reply@zionauto.sg', 'Zion Auto');

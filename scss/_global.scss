@@ -7,6 +7,12 @@ body{
 	&.pushy-active {
 		overflow-x: hidden;
 		overflow-y: hidden;
+		margin-right: 17px;
+	}
+
+	&.pushy-active .dropdown-background {
+		opacity: 1;
+		visibility: visible;
 	}
 }
 
@@ -690,10 +696,6 @@ ul{
 			padding-top: 0;
 		}
 
-	}
-
-	body.pushy-active {
-		overflow: auto;
 	}
 }
 

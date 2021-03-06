@@ -38,7 +38,7 @@ class Calculator {
         this.selectCarWrapper.addEventListener('click', this.handleSelectCarClick);
         this.rightColumnInputs.addEventListener('click', this.handleRightColumnInputsClick);
         this.calculateButton.addEventListener('click', this.handleCalculate);
-        this.submitButton.addEventListener('click', this.handleSubmit);
+        // this.submitButton.addEventListener('click', this.handleSubmit);
         [this.name, this.phone].forEach(input => {
             input.addEventListener('input',  this.handleInput);
         })
@@ -210,9 +210,9 @@ class Calculator {
                 'Name': this.name.value,
                 'Phone': this.phone.value
             }
-    
-            fetch('https://formspree.io/f/xjvpqdzp', {
-                method: 'POST',
+            // https://formspree.io/f/xjvpqdzp
+            fetch('../ajax.php', {
+                method: 'post',
                 headers: {
                     'Content-Type': 'application/json', // отправляемые данные 
                 },

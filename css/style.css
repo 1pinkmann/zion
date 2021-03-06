@@ -8726,7 +8726,8 @@ a.text-dark:hover, a.text-dark:focus {
     right: 0;
     overflow: scroll;
     background: #fff;
-    height: 100%; }
+    height: 100%;
+    overflow-x: hidden; }
     .pushy > .pushy-main-submenu li.pushy-open > .pushy-submenu {
       left: 0; }
     .pushy > .pushy-main-submenu li.pushy-open > .pushy-close-submenu {
@@ -10271,7 +10272,7 @@ button.complete .successMessage svg {
   opacity: 0;
   visibility: hidden;
   background: rgba(0, 0, 0, 0.7);
-  z-index: 11;
+  z-index: 10;
   transition: opacity 0.4s ease-in; }
   .dropdown-background.opened {
     opacity: 1;
@@ -10448,7 +10449,11 @@ body {
   overflow-x: hidden; }
   body.pushy-active {
     overflow-x: hidden;
-    overflow-y: hidden; }
+    overflow-y: hidden;
+    margin-right: 17px; }
+  body.pushy-active .dropdown-background {
+    opacity: 1;
+    visibility: visible; }
 
 #wrapper {
   width: 100%;
@@ -10960,9 +10965,7 @@ ul {
       font-size: 20px;
       line-height: 30px; }
   #middle.mobile-pad {
-    padding-top: 0; }
-  body.pushy-active {
-    overflow: auto; } }
+    padding-top: 0; } }
 
 @media screen and (min-width: 1200px) {
   .car-gray-box h2 {
