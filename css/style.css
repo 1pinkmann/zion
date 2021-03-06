@@ -10541,8 +10541,7 @@ ul {
   text-align: center; }
 
 #middle {
-  width: 100%;
-  float: left; }
+  width: 100%; }
   #middle.mobile-pad {
     padding-top: 84px; }
 
@@ -10679,7 +10678,6 @@ ul {
 
 .box-info-row {
   width: 100%;
-  float: left;
   padding: 0 0 70px; }
   .box-info-row .box-column {
     padding-top: 45px; }
@@ -10990,7 +10988,6 @@ ul {
 /* Header */
 header {
   width: 100%;
-  float: left;
   background: #000;
   z-index: 100;
   position: fixed; }
