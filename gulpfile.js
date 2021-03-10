@@ -1,7 +1,7 @@
 const gulp = require('gulp');
 const fileinclude = require('gulp-file-include');
 const sass = require('gulp-sass');
-const del = require('del');
+// const del = require('del');
  
 gulp.task('sass-compile', function(){
     return gulp.src('./scss/style.scss')
