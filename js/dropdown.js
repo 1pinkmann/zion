@@ -13,8 +13,8 @@ class Dropdown {
             item.classList.remove('opened');
         })
         
-        document.body.style.overflow = 'unset';
-        document.body.style.marginRight = '0';
+        document.body.style.overflow = null;
+        document.body.style.marginRight = null;
         document.body.classList.remove('pushy-active');
     }
 
@@ -53,8 +53,8 @@ class Dropdown {
             let wrapper = close.closest('[data-dropdown]');
             this.background.classList.remove('opened');
             wrapper.classList.remove('opened');
-            document.body.style.overflow = 'unset';
-            document.body.style.marginRight = '0';
+            document.body.style.overflow = null;
+            document.body.style.marginRight = null;
         }   
     } 
 }
