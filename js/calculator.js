@@ -1,12 +1,68 @@
 let cars = [
-    { name: 'bmw-320i', price: '2000' },
-    { name: 'bmw-520i', price: '3000' },
-    { name: 'bmw-740li', price: '4000' },
-    { name: 'cla35', price: '5000' },
-    { name: 'cla45s', price: '4000' },
-    { name: 'cla180', price: '4000' },
-    { name: 'cla200', price: '6000' },
-    { name: 'cla250', price: '8000' }
+    { name: 'bmw-320i', price: '2000', mounthly: [
+            {loan: 4, trade: 1, price: 700},
+            {loan: 4, trade: 0, price: 800},
+            {loan: 5, trade: 1, price: 400},
+            {loan: 5, trade: 0, price: 600},
+            {loan: 7, trade: 1, price: 300},
+            {loan: 7, trade: 0, price: 400},
+        ]},
+    { name: 'bmw-520i', price: '3000', mounthly: [
+            {loan: 4, trade: 1, price: 700},
+            {loan: 4, trade: 0, price: 800},
+            {loan: 5, trade: 1, price: 400},
+            {loan: 5, trade: 0, price: 600},
+            {loan: 7, trade: 1, price: 300},
+            {loan: 7, trade: 0, price: 400},
+        ]},
+    { name: 'bmw-740li', price: '4000', mounthly: [
+            {loan: 4, trade: 1, price: 700},
+            {loan: 4, trade: 0, price: 800},
+            {loan: 5, trade: 1, price: 400},
+            {loan: 5, trade: 0, price: 600},
+            {loan: 7, trade: 1, price: 300},
+            {loan: 7, trade: 0, price: 400},
+        ]},
+    { name: 'cla35', price: '5000', mounthly: [
+            {loan: 4, trade: 1, price: 700},
+            {loan: 4, trade: 0, price: 800},
+            {loan: 5, trade: 1, price: 400},
+            {loan: 5, trade: 0, price: 600},
+            {loan: 7, trade: 1, price: 300},
+            {loan: 7, trade: 0, price: 400},
+        ]},
+    { name: 'cla45s', price: '4000', mounthly: [
+            {loan: 4, trade: 1, price: 700},
+            {loan: 4, trade: 0, price: 800},
+            {loan: 5, trade: 1, price: 400},
+            {loan: 5, trade: 0, price: 600},
+            {loan: 7, trade: 1, price: 300},
+            {loan: 7, trade: 0, price: 400},
+        ]},
+    { name: 'cla180', price: '4000', mounthly: [
+            {loan: 4, trade: 1, price: 700},
+            {loan: 4, trade: 0, price: 800},
+            {loan: 5, trade: 1, price: 400},
+            {loan: 5, trade: 0, price: 600},
+            {loan: 7, trade: 1, price: 300},
+            {loan: 7, trade: 0, price: 400},
+        ]},
+    { name: 'cla200', price: '6000', mounthly: [
+            {loan: 4, trade: 1, price: 700},
+            {loan: 4, trade: 0, price: 800},
+            {loan: 5, trade: 1, price: 400},
+            {loan: 5, trade: 0, price: 600},
+            {loan: 7, trade: 1, price: 300},
+            {loan: 7, trade: 0, price: 400},
+        ]},
+    { name: 'cla250', price: '8000', mounthly: [
+            {loan: 4, trade: 1, price: 700},
+            {loan: 4, trade: 0, price: 800},
+            {loan: 5, trade: 1, price: 400},
+            {loan: 5, trade: 0, price: 600},
+            {loan: 7, trade: 1, price: 300},
+            {loan: 7, trade: 0, price: 400},
+        ]}
 ]
 
 class Calculator {
@@ -54,6 +110,13 @@ class Calculator {
         this.handleSubmit = this.handleSubmit.bind(this);
     }
 
+    getMounthly(carName) {
+        let car = cars.find(item => item.name === carName);
+
+        let mounthly = car.mounthly.find(item => (item.loan === Number(this.period)) && (item.trade === Number(this.tradeIn)))
+        return mounthly.price;
+    }
+
     handleSelectCarClick(e) {
 
         let targetValue = e.target.closest('[data-value]');
@@ -80,7 +143,7 @@ class Calculator {
                 let priceValue = cars.find(item => item.name === this.carName).price;
                 this.carPrice.textContent = priceValue;
                 this.selectedValue = priceValue;
-               
+
                 if (this.calculated === false) {
                     this.mounthly.textContent = this.calculateMounthly();
                 }
@@ -131,6 +194,7 @@ class Calculator {
 
     calculateMounthly() {
         if (this.period && this.tradeIn && this.selectedValue) {
+            console.log(this.getMounthly(this.carName))
             this.hiddenWrapper.style.display = 'block';
             this.calculated = false;
             this.calculateButton.style.display = 'none';
