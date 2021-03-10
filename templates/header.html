@@ -31,13 +31,13 @@
                 <div class="navigation">
                     <ul class="navigation__list" data-wrapper>
                         <li><a href="@@path./index.html"><img src="@@path./images/icon-car.png" alt="" /></a></li>
-                        <li @@if (context.page==='home' ){ class='active' }><a href="@@path./index.html">Home</a></li>
-                        <li @@if (context.page==='about' ){ class='active' }><a href="@@path./about-us.html"
+                        <li ><a href="@@path./index.html">Home</a></li>
+                        <li ><a href="@@path./about-us.html"
                                 onclick="handleOutboundLinkClicks">About Us</a></li>
-                        <li @@if (context.page==='car' ){ class='active' } data-item>
+                        <li  data-item>
                             <a class="navigation__link pushy-menu-btn">Our Cars</a>
                         </li>
-                        <li @@if (context.page==='service' ){ class='active' } data-item>
+                        <li  data-item>
                             <a href="#" data-link class="submenu-arrow">Our Services</a>
                             <div class="dropdown dropdown--main" data-dropdown>
                                 <div class="dropdown__wrapper dropdown__wrapper--1">
@@ -74,7 +74,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li @@if (context.page==='contact' ){ class='active' }><a href="@@path./contact-us.html">Contact
+                        <li ><a href="@@path./contact-us.html">Contact
                                 Us</a></li>
                     </ul>
                 </div>
@@ -82,12 +82,10 @@
                     <a href="@@path./contact-us.html" class="appointment-btn">Book An Appointment</a>
                     <div class="menu-logo"><img src="@@path./images/logo-2.png" alt="" /></div>
                     <div class="menu-time">
-                        @@if (context.workshop){
-                            Mon-Sat (9am - 6pm): <a href="tel:+6564525155">&nbsp;+65 6452 5155</a>
-                        } 
-                        @@if (!context.workshop) {
+                         
+                        
                             Mon - Fri (10am - 7pm):<a href="tel:+6564552535">&nbsp;+65 6455 2535</a>
-                        }
+                        
                     </div>
                     <div class="menu-address">159 Sin Ming Road #01-01/04<br>
                         Armtech Building Singapore 575625</div>

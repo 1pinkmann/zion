@@ -27,13 +27,13 @@ gulp.task('allCars', async function() {
         .pipe(gulp.dest('./all-cars'));
 });
 
-gulp.task('clean', function(){
-    return del('./templates', {force:true});
-});
+// gulp.task('clean', function(){
+//     return del('./templates', {force:true});
+// });
 
 gulp.task('watch', function() {
     gulp.watch('./html/**/*.html', gulp.series('html'));
     gulp.watch('./all-cars-templates/**/*.html', gulp.series('allCars'));
-    gulp.watch('./**/*.html', gulp.series('clean'));
+    // gulp.watch('./**/*.html', gulp.series('clean'));
     gulp.watch('./scss/**/*.scss', gulp.series('sass-compile'));
 })
