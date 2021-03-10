@@ -1,5 +1,7 @@
 class Dropdown {
     constructor() {
+        this.handleWrapperClick = this.handleWrapperClick.bind(this);
+        this.handleBgClick = this.handleBgClick.bind(this);
         this.wrapper = document.querySelector('[data-wrapper]');
         this.background = document.getElementById('dropdown-background');
         wrapper.addEventListener('click', this.handleWrapperClick); 
@@ -18,7 +20,7 @@ class Dropdown {
         document.body.classList.remove('pushy-active');
     }
 
-    handleWrapperClick = (e) => {
+    handleWrapperClick (e) {
         e.preventDefault;
         let link = e.target.closest('[data-link]');
         
