@@ -1,100 +1,132 @@
 let cars = [
-    { name: 'bmw-320i', price: '2000', mounthly: [
-            {loan: 1, trade: 1, price: 1000},
-            {loan: 1, trade: 0, price: 1200},
-            {loan: 2, trade: 1, price: 800},
-            {loan: 2, trade: 0, price: 1000},
-            {loan: 3, trade: 1, price: 700},
-            {loan: 3, trade: 0, price: 800},
-            {loan: 4, trade: 1, price: 400},
-            {loan: 4, trade: 0, price: 700},
-            {loan: 5, trade: 1, price: 300},
-            {loan: 5, trade: 0, price: 600},
-        ]},
-    { name: 'bmw-520i', price: '3000', mounthly: [
-            {loan: 1, trade: 1, price: 2000},
-            {loan: 1, trade: 0, price: 1500},
-            {loan: 2, trade: 1, price: 1300},
-            {loan: 2, trade: 0, price: 1400},
-            {loan: 3, trade: 1, price: 1000},
-            {loan: 3, trade: 0, price: 1200},
-            {loan: 4, trade: 1, price: 1300},
-            {loan: 4, trade: 0, price: 1400},
-            {loan: 5, trade: 1, price: 600},
-            {loan: 5, trade: 0, price: 800},
-        ]},
-    { name: 'bmw-740li', price: '4000', mounthly: [
-            {loan: 1, trade: 1, price: 1000},
-            {loan: 1, trade: 0, price: 1200},
-            {loan: 2, trade: 1, price: 800},
-            {loan: 2, trade: 0, price: 1000},
-            {loan: 3, trade: 1, price: 700},
-            {loan: 3, trade: 0, price: 800},
-            {loan: 4, trade: 1, price: 400},
-            {loan: 4, trade: 0, price: 700},
-            {loan: 5, trade: 1, price: 300},
-            {loan: 5, trade: 0, price: 600},
-        ]},
-    { name: 'cla35', price: '5000', mounthly: [
-            {loan: 1, trade: 1, price: 1000},
-            {loan: 1, trade: 0, price: 1200},
-            {loan: 2, trade: 1, price: 800},
-            {loan: 2, trade: 0, price: 1000},
-            {loan: 3, trade: 1, price: 700},
-            {loan: 3, trade: 0, price: 800},
-            {loan: 4, trade: 1, price: 400},
-            {loan: 4, trade: 0, price: 700},
-            {loan: 5, trade: 1, price: 300},
-            {loan: 5, trade: 0, price: 600},
-        ]},
-    { name: 'cla45s', price: '4000', mounthly: [
-            {loan: 1, trade: 1, price: 1000},
-            {loan: 1, trade: 0, price: 1200},
-            {loan: 2, trade: 1, price: 800},
-            {loan: 2, trade: 0, price: 1000},
-            {loan: 3, trade: 1, price: 700},
-            {loan: 3, trade: 0, price: 800},
-            {loan: 4, trade: 1, price: 400},
-            {loan: 4, trade: 0, price: 700},
-            {loan: 5, trade: 1, price: 300},
-            {loan: 5, trade: 0, price: 600},
-        ]},
-    { name: 'cla180', price: '4000', mounthly: [
-            {loan: 1, trade: 1, price: 1000},
-            {loan: 1, trade: 0, price: 1200},
-            {loan: 2, trade: 1, price: 800},
-            {loan: 2, trade: 0, price: 1000},
-            {loan: 3, trade: 1, price: 700},
-            {loan: 3, trade: 0, price: 800},
-            {loan: 4, trade: 1, price: 400},
-            {loan: 4, trade: 0, price: 700},
-            {loan: 5, trade: 1, price: 300},
-            {loan: 5, trade: 0, price: 600},
-        ]},
-    { name: 'cla200', price: '6000', mounthly: [
-            {loan: 1, trade: 1, price: 1000},
-            {loan: 1, trade: 0, price: 1200},
-            {loan: 2, trade: 1, price: 800},
-            {loan: 2, trade: 0, price: 1000},
-            {loan: 3, trade: 1, price: 700},
-            {loan: 3, trade: 0, price: 800},
-            {loan: 4, trade: 1, price: 400},
-            {loan: 4, trade: 0, price: 700},
-            {loan: 5, trade: 1, price: 300},
-            {loan: 5, trade: 0, price: 600},
-        ]},
-    { name: 'cla250', price: '8000', mounthly: [
-            {loan: 1, trade: 1, price: 1000},
-            {loan: 1, trade: 0, price: 1200},
-            {loan: 2, trade: 1, price: 800},
-            {loan: 2, trade: 0, price: 1000},
-            {loan: 3, trade: 1, price: 700},
-            {loan: 3, trade: 0, price: 800},
-            {loan: 4, trade: 1, price: 400},
-            {loan: 4, trade: 0, price: 700},
-            {loan: 5, trade: 1, price: 300},
-            {loan: 5, trade: 0, price: 600},
-        ]}
+    {
+        name: 'bmw-320i',
+        price: '2000',
+        mounthly: [
+            { loan: 1, trade: 1, price: 1000 }, //trade 1 - yes, trade 0 - no
+            { loan: 1, trade: 0, price: 1200 },
+            { loan: 2, trade: 1, price: 800 },
+            { loan: 2, trade: 0, price: 1000 },
+            { loan: 3, trade: 1, price: 700 },
+            { loan: 3, trade: 0, price: 800 },
+            { loan: 4, trade: 1, price: 400 },
+            { loan: 4, trade: 0, price: 700 },
+            { loan: 5, trade: 1, price: 300 },
+            { loan: 5, trade: 0, price: 600 },
+        ]
+    },
+    {
+        name: 'bmw-520i',
+        price: '3000',
+        mounthly: [
+            { loan: 1, trade: 1, price: 2000 },
+            { loan: 1, trade: 0, price: 1500 },
+            { loan: 2, trade: 1, price: 1300 },
+            { loan: 2, trade: 0, price: 1400 },
+            { loan: 3, trade: 1, price: 1000 },
+            { loan: 3, trade: 0, price: 1200 },
+            { loan: 4, trade: 1, price: 1300 },
+            { loan: 4, trade: 0, price: 1400 },
+            { loan: 5, trade: 1, price: 600 },
+            { loan: 5, trade: 0, price: 800 },
+        ]
+    },
+    {
+        name: 'bmw-740li',
+        price: '4000',
+        mounthly: [
+            { loan: 1, trade: 1, price: 1000 },
+            { loan: 1, trade: 0, price: 1200 },
+            { loan: 2, trade: 1, price: 800 },
+            { loan: 2, trade: 0, price: 1000 },
+            { loan: 3, trade: 1, price: 700 },
+            { loan: 3, trade: 0, price: 800 },
+            { loan: 4, trade: 1, price: 400 },
+            { loan: 4, trade: 0, price: 700 },
+            { loan: 5, trade: 1, price: 300 },
+            { loan: 5, trade: 0, price: 600 },
+        ]
+    },
+    {
+        name: 'cla35',
+        price: '5000',
+        mounthly: [
+            { loan: 1, trade: 1, price: 1000 },
+            { loan: 1, trade: 0, price: 1200 },
+            { loan: 2, trade: 1, price: 800 },
+            { loan: 2, trade: 0, price: 1000 },
+            { loan: 3, trade: 1, price: 700 },
+            { loan: 3, trade: 0, price: 800 },
+            { loan: 4, trade: 1, price: 400 },
+            { loan: 4, trade: 0, price: 700 },
+            { loan: 5, trade: 1, price: 300 },
+            { loan: 5, trade: 0, price: 600 },
+        ]
+    },
+    {
+        name: 'cla45s',
+        price: '4000',
+        mounthly: [
+            { loan: 1, trade: 1, price: 1000 },
+            { loan: 1, trade: 0, price: 1200 },
+            { loan: 2, trade: 1, price: 800 },
+            { loan: 2, trade: 0, price: 1000 },
+            { loan: 3, trade: 1, price: 700 },
+            { loan: 3, trade: 0, price: 800 },
+            { loan: 4, trade: 1, price: 400 },
+            { loan: 4, trade: 0, price: 700 },
+            { loan: 5, trade: 1, price: 300 },
+            { loan: 5, trade: 0, price: 600 },
+        ]
+    },
+    {
+        name: 'cla180',
+        price: '4000',
+        mounthly: [
+            { loan: 1, trade: 1, price: 1000 },
+            { loan: 1, trade: 0, price: 1200 },
+            { loan: 2, trade: 1, price: 800 },
+            { loan: 2, trade: 0, price: 1000 },
+            { loan: 3, trade: 1, price: 700 },
+            { loan: 3, trade: 0, price: 800 },
+            { loan: 4, trade: 1, price: 400 },
+            { loan: 4, trade: 0, price: 700 },
+            { loan: 5, trade: 1, price: 300 },
+            { loan: 5, trade: 0, price: 600 },
+        ]
+    },
+    {
+        name: 'cla200',
+        price: '6000',
+        mounthly: [
+            { loan: 1, trade: 1, price: 1000 },
+            { loan: 1, trade: 0, price: 1200 },
+            { loan: 2, trade: 1, price: 800 },
+            { loan: 2, trade: 0, price: 1000 },
+            { loan: 3, trade: 1, price: 700 },
+            { loan: 3, trade: 0, price: 800 },
+            { loan: 4, trade: 1, price: 400 },
+            { loan: 4, trade: 0, price: 700 },
+            { loan: 5, trade: 1, price: 300 },
+            { loan: 5, trade: 0, price: 600 },
+        ]
+    },
+    {
+        name: 'cla250',
+        price: '8000',
+        mounthly: [
+            { loan: 1, trade: 1, price: 1000 },
+            { loan: 1, trade: 0, price: 1200 },
+            { loan: 2, trade: 1, price: 800 },
+            { loan: 2, trade: 0, price: 1000 },
+            { loan: 3, trade: 1, price: 700 },
+            { loan: 3, trade: 0, price: 800 },
+            { loan: 4, trade: 1, price: 400 },
+            { loan: 4, trade: 0, price: 700 },
+            { loan: 5, trade: 1, price: 300 },
+            { loan: 5, trade: 0, price: 600 },
+        ]
+    }
 ]
 
 class Calculator {
@@ -128,7 +160,7 @@ class Calculator {
         this.calculateButton.addEventListener('click', this.handleCalculate);
         this.submitButton.addEventListener('click', this.handleSubmit);
         [this.name, this.phone].forEach(input => {
-            input.addEventListener('input',  this.handleInput);
+            input.addEventListener('input', this.handleInput);
         })
         this.checkbox.addEventListener('click', this.handleCheckbox);
     }
@@ -144,7 +176,7 @@ class Calculator {
 
     getMounthly(carName) {
         let car = cars.find(item => item.name === carName);
-      
+
         let mounthly = car.mounthly.find(item => (item.loan === Number(this.period)) && (item.trade === Number(this.tradeIn)))
         return mounthly.price;
     }
@@ -254,7 +286,7 @@ class Calculator {
 
     removeError(wrapper) {
         let error = wrapper.querySelector('[data-error-element]');
-        if (error) {  
+        if (error) {
             error.remove();
         }
     }
@@ -267,7 +299,7 @@ class Calculator {
 
     clearForm() {
         let inputs = this.wrapper.querySelectorAll('select, input');
-        
+
         inputs.forEach(input => {
             input.value = '';
         })
@@ -335,6 +367,6 @@ class Calculator {
                 }, 4000);
             })
         }
-        
+
     }
 }
