@@ -1,67 +1,99 @@
 let cars = [
     { name: 'bmw-320i', price: '2000', mounthly: [
-            {loan: 4, trade: 1, price: 700},
-            {loan: 4, trade: 0, price: 800},
-            {loan: 5, trade: 1, price: 400},
+            {loan: 1, trade: 1, price: 1000},
+            {loan: 1, trade: 0, price: 1200},
+            {loan: 2, trade: 1, price: 800},
+            {loan: 2, trade: 0, price: 1000},
+            {loan: 3, trade: 1, price: 700},
+            {loan: 3, trade: 0, price: 800},
+            {loan: 4, trade: 1, price: 400},
+            {loan: 4, trade: 0, price: 700},
+            {loan: 5, trade: 1, price: 300},
             {loan: 5, trade: 0, price: 600},
-            {loan: 7, trade: 1, price: 300},
-            {loan: 7, trade: 0, price: 400},
         ]},
     { name: 'bmw-520i', price: '3000', mounthly: [
-            {loan: 4, trade: 1, price: 700},
-            {loan: 4, trade: 0, price: 800},
-            {loan: 5, trade: 1, price: 400},
-            {loan: 5, trade: 0, price: 600},
-            {loan: 7, trade: 1, price: 300},
-            {loan: 7, trade: 0, price: 400},
+            {loan: 1, trade: 1, price: 2000},
+            {loan: 1, trade: 0, price: 1500},
+            {loan: 2, trade: 1, price: 1300},
+            {loan: 2, trade: 0, price: 1400},
+            {loan: 3, trade: 1, price: 1000},
+            {loan: 3, trade: 0, price: 1200},
+            {loan: 4, trade: 1, price: 1300},
+            {loan: 4, trade: 0, price: 1400},
+            {loan: 5, trade: 1, price: 600},
+            {loan: 5, trade: 0, price: 800},
         ]},
     { name: 'bmw-740li', price: '4000', mounthly: [
-            {loan: 4, trade: 1, price: 700},
-            {loan: 4, trade: 0, price: 800},
-            {loan: 5, trade: 1, price: 400},
+            {loan: 1, trade: 1, price: 1000},
+            {loan: 1, trade: 0, price: 1200},
+            {loan: 2, trade: 1, price: 800},
+            {loan: 2, trade: 0, price: 1000},
+            {loan: 3, trade: 1, price: 700},
+            {loan: 3, trade: 0, price: 800},
+            {loan: 4, trade: 1, price: 400},
+            {loan: 4, trade: 0, price: 700},
+            {loan: 5, trade: 1, price: 300},
             {loan: 5, trade: 0, price: 600},
-            {loan: 7, trade: 1, price: 300},
-            {loan: 7, trade: 0, price: 400},
         ]},
     { name: 'cla35', price: '5000', mounthly: [
-            {loan: 4, trade: 1, price: 700},
-            {loan: 4, trade: 0, price: 800},
-            {loan: 5, trade: 1, price: 400},
+            {loan: 1, trade: 1, price: 1000},
+            {loan: 1, trade: 0, price: 1200},
+            {loan: 2, trade: 1, price: 800},
+            {loan: 2, trade: 0, price: 1000},
+            {loan: 3, trade: 1, price: 700},
+            {loan: 3, trade: 0, price: 800},
+            {loan: 4, trade: 1, price: 400},
+            {loan: 4, trade: 0, price: 700},
+            {loan: 5, trade: 1, price: 300},
             {loan: 5, trade: 0, price: 600},
-            {loan: 7, trade: 1, price: 300},
-            {loan: 7, trade: 0, price: 400},
         ]},
     { name: 'cla45s', price: '4000', mounthly: [
-            {loan: 4, trade: 1, price: 700},
-            {loan: 4, trade: 0, price: 800},
-            {loan: 5, trade: 1, price: 400},
+            {loan: 1, trade: 1, price: 1000},
+            {loan: 1, trade: 0, price: 1200},
+            {loan: 2, trade: 1, price: 800},
+            {loan: 2, trade: 0, price: 1000},
+            {loan: 3, trade: 1, price: 700},
+            {loan: 3, trade: 0, price: 800},
+            {loan: 4, trade: 1, price: 400},
+            {loan: 4, trade: 0, price: 700},
+            {loan: 5, trade: 1, price: 300},
             {loan: 5, trade: 0, price: 600},
-            {loan: 7, trade: 1, price: 300},
-            {loan: 7, trade: 0, price: 400},
         ]},
     { name: 'cla180', price: '4000', mounthly: [
-            {loan: 4, trade: 1, price: 700},
-            {loan: 4, trade: 0, price: 800},
-            {loan: 5, trade: 1, price: 400},
+            {loan: 1, trade: 1, price: 1000},
+            {loan: 1, trade: 0, price: 1200},
+            {loan: 2, trade: 1, price: 800},
+            {loan: 2, trade: 0, price: 1000},
+            {loan: 3, trade: 1, price: 700},
+            {loan: 3, trade: 0, price: 800},
+            {loan: 4, trade: 1, price: 400},
+            {loan: 4, trade: 0, price: 700},
+            {loan: 5, trade: 1, price: 300},
             {loan: 5, trade: 0, price: 600},
-            {loan: 7, trade: 1, price: 300},
-            {loan: 7, trade: 0, price: 400},
         ]},
     { name: 'cla200', price: '6000', mounthly: [
-            {loan: 4, trade: 1, price: 700},
-            {loan: 4, trade: 0, price: 800},
-            {loan: 5, trade: 1, price: 400},
+            {loan: 1, trade: 1, price: 1000},
+            {loan: 1, trade: 0, price: 1200},
+            {loan: 2, trade: 1, price: 800},
+            {loan: 2, trade: 0, price: 1000},
+            {loan: 3, trade: 1, price: 700},
+            {loan: 3, trade: 0, price: 800},
+            {loan: 4, trade: 1, price: 400},
+            {loan: 4, trade: 0, price: 700},
+            {loan: 5, trade: 1, price: 300},
             {loan: 5, trade: 0, price: 600},
-            {loan: 7, trade: 1, price: 300},
-            {loan: 7, trade: 0, price: 400},
         ]},
     { name: 'cla250', price: '8000', mounthly: [
-            {loan: 4, trade: 1, price: 700},
-            {loan: 4, trade: 0, price: 800},
-            {loan: 5, trade: 1, price: 400},
+            {loan: 1, trade: 1, price: 1000},
+            {loan: 1, trade: 0, price: 1200},
+            {loan: 2, trade: 1, price: 800},
+            {loan: 2, trade: 0, price: 1000},
+            {loan: 3, trade: 1, price: 700},
+            {loan: 3, trade: 0, price: 800},
+            {loan: 4, trade: 1, price: 400},
+            {loan: 4, trade: 0, price: 700},
+            {loan: 5, trade: 1, price: 300},
             {loan: 5, trade: 0, price: 600},
-            {loan: 7, trade: 1, price: 300},
-            {loan: 7, trade: 0, price: 400},
         ]}
 ]
 
@@ -112,7 +144,7 @@ class Calculator {
 
     getMounthly(carName) {
         let car = cars.find(item => item.name === carName);
-
+      
         let mounthly = car.mounthly.find(item => (item.loan === Number(this.period)) && (item.trade === Number(this.tradeIn)))
         return mounthly.price;
     }
@@ -194,16 +226,16 @@ class Calculator {
 
     calculateMounthly() {
         if (this.period && this.tradeIn && this.selectedValue) {
-            console.log(this.getMounthly(this.carName))
+
             this.hiddenWrapper.style.display = 'block';
             this.calculated = false;
             this.calculateButton.style.display = 'none';
-            return this.mounthlyValue = Math.round((this.selectedValue / this.period) * (this.tradeIn === '1' ? 0.5 : 1));
+            return this.mounthlyValue = this.getMounthly(this.carName);
         } else {
             this.hiddenWrapper.style.display = 'none';
             this.calculateButton.style.display = 'block';
             this.calculated = true;
-            return this.mounthly.textContent = 0;
+            return 0;
         }
     }
 
@@ -276,10 +308,13 @@ class Calculator {
                 'Car name': this.carName,
                 'Loan period': this.period,
                 'Trade in': this.tradeIn ? 'Yes' : 'No',
+                'Mounthly': this.mounthlyValue + '$',
                 'Details': this.details.value,
                 'Name': this.name.value,
                 'Phone': this.phone.value
             }
+
+            console.log(this.data);
 
             fetch('https://formspree.io/f/xjvpqdzp', {
                 method: 'post',
