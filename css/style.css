@@ -10327,7 +10327,7 @@ button.complete .successMessage svg {
       background-size: 300% 300%;
       animation: gradient 4s ease infinite; }
     .dropdown__link {
-      height: 66px;
+      height: 75px;
       padding: 0 15px;
       font-weight: 400 !important;
       font-size: 26px; }
