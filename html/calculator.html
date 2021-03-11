@@ -251,8 +251,9 @@
     <script src="js/jquery.menu-aim.js"></script>
     <script src="js/mobile-menu.js"></script>
     <script src="js/fancy-button.js"></script>
-    <script src="./js/calculator.js"></script>
-    <script>
+    <script src="./js/calculator.js" type="module"></script>
+    <script type="module">
+        import Calculator from './js/calculator.js';
         new Calculator();
     </script>
     @@include('./templates/linkedIn.html')

@@ -445,6 +445,10 @@ header{
 			position: absolute;
 			background: #ffffff;
 		}
+
+		.header-bottom-outer.index {
+			z-index: 2;
+		}
 	
 		.header-bottom .navigation {
 			display: flex;

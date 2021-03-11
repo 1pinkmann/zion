@@ -11328,6 +11328,8 @@ header {
     overflow-y: auto;
     position: absolute;
     background: #ffffff; }
+  header .header-bottom-outer.index {
+    z-index: 2; }
   header .header-bottom .navigation {
     display: flex;
     flex-direction: column; }
