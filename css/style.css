@@ -10247,16 +10247,6 @@ button.complete .successMessage svg {
     font-weight: 500;
     font-size: 25px;
     color: #000000; }
-  .dropdown__link:after {
-    content: '';
-    width: 8px;
-    height: 8px;
-    border: 2px solid #000000;
-    border-left: none;
-    border-top: none;
-    transform: rotateZ(-45deg); }
-  .dropdown__link:hover:after, .dropdown__item.opened > .dropdown__link:after {
-    border-color: #ED2724; }
   .dropdown__item.opened > .dropdown--submenu {
     opacity: 1;
     visibility: visible; }

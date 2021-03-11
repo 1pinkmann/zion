@@ -90,19 +90,19 @@
         color: #000000;
     }
 
-    &__link:after {
-        content: '';
-        width: 8px;
-        height: 8px;
-        border: 2px solid #000000;
-        border-left: none;
-        border-top: none;
-        transform: rotateZ(-45deg);
-    }
+    // &__link:after {
+    //     content: '';
+    //     width: 8px;
+    //     height: 8px;
+    //     border: 2px solid #000000;
+    //     border-left: none;
+    //     border-top: none;
+    //     transform: rotateZ(-45deg);
+    // }
 
-    &__link:hover:after, &__item.opened > &__link:after {
-        border-color: #ED2724;
-    }
+    // &__link:hover:after, &__item.opened > &__link:after {
+    //     border-color: #ED2724;
+    // }
 
     &__item.opened > &--submenu {
         opacity: 1;
