@@ -214,14 +214,24 @@ export default class Calculator {
         this.selectedValue = false;
         this.tradeIn = '';
 
+        this.carImage.style.display = 'none';
+        this.carImage.src = '';
+        this.carPrice.textContent = 0;
+        this.mounthly.textContent = 0;
+
         this.initError(this.selectCarWrapper, this.selectedValue);
         this.initError(this.periodWrapper, this.period);
         this.initError(this.tradeInWrapper, this.tradeIn !== '');
-        
+
         $('select').niceSelect('update');
     }
 
     handleInput(e) {
+        if (!e.target.value) {
+            e.target.closest('[data-error]').setAttribute('data-error', true);
+        } else {
+            e.target.closest('[data-error]').setAttribute('data-error', false);
+        }
         this.removeError(e.target.closest('[data-error]'));
     }
 
@@ -245,13 +255,14 @@ export default class Calculator {
             this.checkboxError();
         }
 
-        this.submitButton.style.pointerEvents = 'none';
-        this.submitButton.classList.remove('ready');
-        this.submitButton.classList.add('loading');
-
-        if (!this.name.value && !this.phone.value) {
-            this.showErrors(document.querySelectorAll('[data-error]'))
+        if (!this.name.value || !this.phone.value) {
+            this.showErrors(document.querySelectorAll('[data-error="true"]'))
         } else if (this.name.value && this.phone.value && this.checkbox.checked) {
+
+            this.submitButton.style.pointerEvents = 'none';
+            this.submitButton.classList.remove('ready');
+            this.submitButton.classList.add('loading');
+
             this.data = {
                 'Car name': this.carName,
                 'Loan period': this.period,
@@ -280,6 +291,8 @@ export default class Calculator {
                     this.calculateButton.style.display = 'block';
                     this.submitButton.style.pointerEvents = 'all';
                     this.clearForm();
+                    this.initError(this.name.closest('[data-error]'), this.name.value);
+                    this.initError(this.phone.closest('[data-error]'), this.phone.value);
                 }, 4000);
             })
         }
