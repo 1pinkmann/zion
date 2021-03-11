@@ -173,7 +173,8 @@
         width: 100%;
         transition: left 0.25s ease-in-out;
         height: 100%;
-        overflow: auto;
+        overflow-x: hidden;
+        overflow-y: scroll;
         position: absolute;
         z-index: 6;
         top: 0;
