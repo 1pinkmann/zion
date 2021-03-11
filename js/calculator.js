@@ -21,7 +21,6 @@ export default class Calculator {
         this.name = document.getElementById('user-name');
         this.phone = document.getElementById('user-phone');
         this.checkbox = document.getElementById('checkbox');
-        this.selectedValue;
         this.calculated = true;
         this.tradeIn = '';
         this.initSelectCarOptions();
@@ -66,11 +65,6 @@ export default class Calculator {
                 this.selectedValue = 0;
                 this.periodWrapper.classList.add('disabled');
                 this.tradeInWrapper.classList.add('disabled');
-                if (this.calculated === false) {
-                    this.mounthly.textContent = this.calculateMounthly();
-                }
-                this.selectCarWrapper.setAttribute('data-error', true);
-                this.removeOptions();
             } else {
                 this.periodWrapper.classList.remove('disabled');
                 this.tradeInWrapper.classList.remove('disabled');
@@ -78,18 +72,19 @@ export default class Calculator {
                 this.carImage.style.display = 'block';
                 this.carName = targetValue.getAttribute('data-value');
 
-                this.initLoanPeriodOptions(this.carName);
-
                 let priceValue = cars.find(item => item.name === this.carName).price;
+
                 this.carPrice.textContent = priceValue;
                 this.selectedValue = priceValue;
-
-                if (this.calculated === false) {
-                    this.mounthly.textContent = this.calculateMounthly();
-                }
-                this.selectCarWrapper.setAttribute('data-error', false);
-                this.removeError(this.selectCarWrapper);
             }
+
+            this.initLoanPeriodOptions(this.carName);
+
+            if (this.calculated === false) {
+                this.mounthly.textContent = this.calculateMounthly();
+            }
+            
+            this.initError(this.selectCarWrapper, this.selectedValue);
         }
     }
 
@@ -105,20 +100,10 @@ export default class Calculator {
 
                 if (periodWrapper) {
                     this.period = targetValueAttribute;
-                    if (this.period) {
-                        periodWrapper.setAttribute('data-error', false);
-                        this.removeError(periodWrapper);
-                    } else {
-                        periodWrapper.setAttribute('data-error', true);
-                    }
+                    this.initError(periodWrapper, this.period);
                 } else if (tradeInWrapper) {
                     this.tradeIn = targetValueAttribute;
-                    if (this.tradeIn !== '') {
-                        tradeInWrapper.setAttribute('data-error', false);
-                        this.removeError(tradeInWrapper);
-                    } else {
-                        tradeInWrapper.setAttribute('data-error', true);
-                    }
+                    this.initError(tradeInWrapper, this.tradeIn !== '');
                 }
                 if (this.calculated === false) {
                     this.mounthly.textContent = this.calculateMounthly();
@@ -149,6 +134,7 @@ export default class Calculator {
 
     showErrors(wrappers) {
         wrappers.forEach(wrapper => {
+            if (wrapper.querySelector('[data-error-element]')) return;
             if (wrapper.getAttribute('data-error') === 'true') {
 
                 let error = document.createElement('span');
@@ -191,6 +177,15 @@ export default class Calculator {
         $('#period-select').niceSelect('update');
     }
 
+    initError(element, conition) {
+        if (!conition) {
+            element.setAttribute('data-error', true);
+        } else {
+            element.setAttribute('data-error', false);
+            this.removeError(element);
+        }
+    }
+
     removeOptions() {
 
         Array.from(this.periodSelect.options).forEach((option, index) => {
@@ -198,6 +193,10 @@ export default class Calculator {
                 option.remove();
             }
         })
+        this.period = false;
+        this.initError(this.selectCarWrapper, this.selectedValue);
+        this.initError(this.periodWrapper, this.period);
+        this.initError(this.tradeInWrapper, this.tradeIn !== '');
 
         $('#period-select').niceSelect('update');
     }
@@ -207,7 +206,19 @@ export default class Calculator {
 
         inputs.forEach(input => {
             input.value = '';
-        })
+        });
+
+        this.checkbox.checked = false;
+
+        this.period = false;
+        this.selectedValue = false;
+        this.tradeIn = '';
+
+        this.initError(this.selectCarWrapper, this.selectedValue);
+        this.initError(this.periodWrapper, this.period);
+        this.initError(this.tradeInWrapper, this.tradeIn !== '');
+        
+        $('select').niceSelect('update');
     }
 
     handleInput(e) {

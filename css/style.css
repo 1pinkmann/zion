@@ -9900,6 +9900,9 @@ button.complete .successMessage svg {
   display: flex;
   flex-direction: column; }
 
+.calculator__input-wrapper.disabled {
+  opacity: 0.5; }
+
 .calculator__input-wrapper--1 {
   margin-top: 20px; }
 
@@ -10044,7 +10047,9 @@ button.complete .successMessage svg {
   .calculator__submit-btn {
     margin-top: 20px; }
   .calculator__submit-btn .btn {
-    height: 50px; } }
+    height: 50px; }
+  .calculator__error {
+    font-size: 14px; } }
 
 @media (max-width: 767px) {
   .calculator__form {

@@ -35,6 +35,10 @@
         flex-direction: column;
     }
 
+    &__input-wrapper.disabled {
+        opacity: 0.5;
+    }
+
     &__input-wrapper--1 {
         margin-top: 20px;
     }
@@ -256,6 +260,10 @@
 
        &__submit-btn .btn {
            height: 50px;
+       }
+
+       &__error {
+        font-size: 14px;
        }
     }
 }
