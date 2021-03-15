@@ -197,6 +197,10 @@
             border-radius: 0;
         }
 
+        &__list {
+            min-height: 400px;
+        }
+
         &__item:nth-child(n) {
             margin-top: 0;
         }

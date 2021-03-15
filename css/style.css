@@ -10316,6 +10316,8 @@ button.complete .successMessage svg {
       flex-direction: column;
       display: flex;
       border-radius: 0; }
+    .dropdown__list {
+      min-height: 400px; }
     .dropdown__item:nth-child(n) {
       margin-top: 0; }
     .dropdown__title {
