@@ -8107,7 +8107,7 @@ a.text-dark:hover, a.text-dark:focus {
     top: 50%;
     margin: -4px 0 0 0;
     left: 0px;
-    background: url("../images/icon-arrow-left.svg") no-repeat;
+    background: url("../../images/icon-arrow-left.svg") no-repeat;
     background-size: 30px 14px; }
     .owl-nav .owl-prev:hover {
       opacity: 0.8; }
@@ -8122,7 +8122,7 @@ a.text-dark:hover, a.text-dark:focus {
     top: 50%;
     margin: -4px 0 0 0;
     right: 0;
-    background: url("../images/icon-arrow-right.svg") no-repeat;
+    background: url("../../images/icon-arrow-right.svg") no-repeat;
     background-size: 30px 14px; }
     .owl-nav .owl-next:hover {
       opacity: 0.8; }
@@ -8665,7 +8665,7 @@ a.text-dark:hover, a.text-dark:focus {
   .pushy .submenu-arrow {
     width: 8px;
     height: 14px;
-    background: url("../images/arrow-right.svg") no-repeat left top;
+    background: url("../../images/arrow-right.svg") no-repeat left top;
     position: absolute;
     right: 15px;
     top: 34px; }
@@ -8844,7 +8844,7 @@ a.text-dark:hover, a.text-dark:focus {
       width: 12px;
       height: 12px;
       float: left;
-      background: url("../images/icon-close.svg") no-repeat left top;
+      background: url("../../images/icon-close.svg") no-repeat left top;
       border: none;
       padding: 0; }
   .car-menu-top .pushy-close-submenu {
@@ -8854,7 +8854,7 @@ a.text-dark:hover, a.text-dark:focus {
   .car-menu-top .back-arrow {
     width: 8px;
     height: 14px;
-    background: url("../images/arrow-left-white.svg") no-repeat left top;
+    background: url("../../images/arrow-left-white.svg") no-repeat left top;
     cursor: pointer;
     float: left; }
 
@@ -9037,10 +9037,10 @@ a.text-dark:hover, a.text-dark:focus {
     margin: 0 10px 0 0;
     vertical-align: middle; }
     .btn-white span.tel {
-      background: url("../images/icon-call.png") no-repeat left top;
+      background: url("../../images/icon-call.png") no-repeat left top;
       background-size: cover; }
     .btn-white span.appointment {
-      background: url("../images/icon-appointment.png") no-repeat left top;
+      background: url("../../images/icon-appointment.png") no-repeat left top;
       background-size: cover; }
 
 .btn-row {
@@ -9357,10 +9357,10 @@ button.complete .successMessage svg {
       margin: 0 10px 0 0;
       vertical-align: middle; }
       .button-bird__text i.tel {
-        background: url("../images/icon-call.png") no-repeat left top;
+        background: url("../../images/icon-call.png") no-repeat left top;
         background-size: cover; }
       .button-bird__text i.appointment {
-        background: url("../images/icon-appointment.png") no-repeat left top;
+        background: url("../../images/icon-appointment.png") no-repeat left top;
         background-size: cover; }
   .button-bird:focus {
     outline: none; }
@@ -9410,7 +9410,7 @@ button.complete .successMessage svg {
     opacity: 1;
     display: block;
     position: absolute;
-    background-image: url("../images/birds.svg");
+    background-image: url("../../images/birds.svg");
     background-size: auto 100%;
     width: 20px;
     height: 20px;
@@ -9755,10 +9755,10 @@ button.complete .successMessage svg {
       height: 26px;
       margin: 0 15px 0 0; }
       .btn-white span.tel {
-        background: url("../images/icon-call.png") no-repeat left top;
+        background: url("../../images/icon-call.png") no-repeat left top;
         background-size: cover; }
       .btn-white span.appointment {
-        background: url("../images/icon-appointment.png") no-repeat left top;
+        background: url("../../images/icon-appointment.png") no-repeat left top;
         background-size: cover; }
   .button-bird .bird--28,
   .button-bird .bird--29 {
@@ -10362,96 +10362,96 @@ button.complete .successMessage svg {
 /* Font */
 @font-face {
   font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Regular.eot");
-  src: url("../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Regular.woff2") format("woff2"), url("../fonts/Montserrat-Regular.woff") format("woff"), url("../fonts/Montserrat-Regular.ttf") format("truetype"), url("../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
+  src: url("../../fonts/Montserrat-Regular.eot");
+  src: url("../../fonts/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Montserrat-Regular.woff2") format("woff2"), url("../../fonts/Montserrat-Regular.woff") format("woff"), url("../../fonts/Montserrat-Regular.ttf") format("truetype"), url("../../fonts/Montserrat-Regular.svg#Montserrat-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Medium.eot");
-  src: url("../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Medium.woff2") format("woff2"), url("../fonts/Montserrat-Medium.woff") format("woff"), url("../fonts/Montserrat-Medium.ttf") format("truetype"), url("../fonts/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
+  src: url("../../fonts/Montserrat-Medium.eot");
+  src: url("../../fonts/Montserrat-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Montserrat-Medium.woff2") format("woff2"), url("../../fonts/Montserrat-Medium.woff") format("woff"), url("../../fonts/Montserrat-Medium.ttf") format("truetype"), url("../../fonts/Montserrat-Medium.svg#Montserrat-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Montserrat';
-  src: url("../fonts/Montserrat-Bold.eot");
-  src: url("../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Montserrat-Bold.woff2") format("woff2"), url("../fonts/Montserrat-Bold.woff") format("woff"), url("../fonts/Montserrat-Bold.ttf") format("truetype"), url("../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
+  src: url("../../fonts/Montserrat-Bold.eot");
+  src: url("../../fonts/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Montserrat-Bold.woff2") format("woff2"), url("../../fonts/Montserrat-Bold.woff") format("woff"), url("../../fonts/Montserrat-Bold.ttf") format("truetype"), url("../../fonts/Montserrat-Bold.svg#Montserrat-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Corporate A';
-  src: url("../fonts/CorporateA-Demi.eot");
-  src: url("../fonts/CorporateA-Demi.eot?#iefix") format("embedded-opentype"), url("../fonts/CorporateA-Demi.woff2") format("woff2"), url("../fonts/CorporateA-Demi.woff") format("woff"), url("../fonts/CorporateA-Demi.ttf") format("truetype"), url("../fonts/CorporateA-Demi.svg#CorporateA-Demi") format("svg");
+  src: url("../../fonts/CorporateA-Demi.eot");
+  src: url("../../fonts/CorporateA-Demi.eot?#iefix") format("embedded-opentype"), url("../../fonts/CorporateA-Demi.woff2") format("woff2"), url("../../fonts/CorporateA-Demi.woff") format("woff"), url("../../fonts/CorporateA-Demi.ttf") format("truetype"), url("../../fonts/CorporateA-Demi.svg#CorporateA-Demi") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Corporate A';
-  src: url("../fonts/CorporateA-Regular.eot");
-  src: url("../fonts/CorporateA-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/CorporateA-Regular.woff2") format("woff2"), url("../fonts/CorporateA-Regular.woff") format("woff"), url("../fonts/CorporateA-Regular.ttf") format("truetype"), url("../fonts/CorporateA-Regular.svg#CorporateA-Regular") format("svg");
+  src: url("../../fonts/CorporateA-Regular.eot");
+  src: url("../../fonts/CorporateA-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/CorporateA-Regular.woff2") format("woff2"), url("../../fonts/CorporateA-Regular.woff") format("woff"), url("../../fonts/CorporateA-Regular.ttf") format("truetype"), url("../../fonts/CorporateA-Regular.svg#CorporateA-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/Roboto-Regular.eot");
-  src: url("../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("truetype"), url("../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
+  src: url("../../fonts/Roboto-Regular.eot");
+  src: url("../../fonts/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roboto-Regular.woff2") format("woff2"), url("../../fonts/Roboto-Regular.woff") format("woff"), url("../../fonts/Roboto-Regular.ttf") format("truetype"), url("../../fonts/Roboto-Regular.svg#Roboto-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/Roboto-Medium.eot");
-  src: url("../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Medium.woff2") format("woff2"), url("../fonts/Roboto-Medium.woff") format("woff"), url("../fonts/Roboto-Medium.ttf") format("truetype"), url("../fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");
+  src: url("../../fonts/Roboto-Medium.eot");
+  src: url("../../fonts/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roboto-Medium.woff2") format("woff2"), url("../../fonts/Roboto-Medium.woff") format("woff"), url("../../fonts/Roboto-Medium.ttf") format("truetype"), url("../../fonts/Roboto-Medium.svg#Roboto-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Roboto';
-  src: url("../fonts/Roboto-Bold.eot");
-  src: url("../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Roboto-Bold.woff2") format("woff2"), url("../fonts/Roboto-Bold.woff") format("woff"), url("../fonts/Roboto-Bold.ttf") format("truetype"), url("../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
+  src: url("../../fonts/Roboto-Bold.eot");
+  src: url("../../fonts/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Roboto-Bold.woff2") format("woff2"), url("../../fonts/Roboto-Bold.woff") format("woff"), url("../../fonts/Roboto-Bold.ttf") format("truetype"), url("../../fonts/Roboto-Bold.svg#Roboto-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Rubik';
-  src: url("../fonts/Rubik-Regular.eot");
-  src: url("../fonts/Rubik-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Regular.woff2") format("woff2"), url("../fonts/Rubik-Regular.woff") format("woff"), url("../fonts/Rubik-Regular.ttf") format("truetype"), url("../fonts/Rubik-Regular.svg#Rubik-Regular") format("svg");
+  src: url("../../fonts/Rubik-Regular.eot");
+  src: url("../../fonts/Rubik-Regular.eot?#iefix") format("embedded-opentype"), url("../../fonts/Rubik-Regular.woff2") format("woff2"), url("../../fonts/Rubik-Regular.woff") format("woff"), url("../../fonts/Rubik-Regular.ttf") format("truetype"), url("../../fonts/Rubik-Regular.svg#Rubik-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Rubik';
-  src: url("../fonts/Rubik-Light.eot");
-  src: url("../fonts/Rubik-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Light.woff2") format("woff2"), url("../fonts/Rubik-Light.woff") format("woff"), url("../fonts/Rubik-Light.ttf") format("truetype"), url("../fonts/Rubik-Light.svg#Rubik-Light") format("svg");
+  src: url("../../fonts/Rubik-Light.eot");
+  src: url("../../fonts/Rubik-Light.eot?#iefix") format("embedded-opentype"), url("../../fonts/Rubik-Light.woff2") format("woff2"), url("../../fonts/Rubik-Light.woff") format("woff"), url("../../fonts/Rubik-Light.ttf") format("truetype"), url("../../fonts/Rubik-Light.svg#Rubik-Light") format("svg");
   font-weight: 300;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Rubik';
-  src: url("../fonts/Rubik-Medium.eot");
-  src: url("../fonts/Rubik-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Medium.woff2") format("woff2"), url("../fonts/Rubik-Medium.woff") format("woff"), url("../fonts/Rubik-Medium.ttf") format("truetype"), url("../fonts/Rubik-Medium.svg#Rubik-Medium") format("svg");
+  src: url("../../fonts/Rubik-Medium.eot");
+  src: url("../../fonts/Rubik-Medium.eot?#iefix") format("embedded-opentype"), url("../../fonts/Rubik-Medium.woff2") format("woff2"), url("../../fonts/Rubik-Medium.woff") format("woff"), url("../../fonts/Rubik-Medium.ttf") format("truetype"), url("../../fonts/Rubik-Medium.svg#Rubik-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap; }
 
 @font-face {
   font-family: 'Rubik';
-  src: url("../fonts/Rubik-Bold.eot");
-  src: url("../fonts/Rubik-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Rubik-Bold.woff2") format("woff2"), url("../fonts/Rubik-Bold.woff") format("woff"), url("../fonts/Rubik-Bold.ttf") format("truetype"), url("../fonts/Rubik-Bold.svg#Rubik-Bold") format("svg");
+  src: url("../../fonts/Rubik-Bold.eot");
+  src: url("../../fonts/Rubik-Bold.eot?#iefix") format("embedded-opentype"), url("../../fonts/Rubik-Bold.woff2") format("woff2"), url("../../fonts/Rubik-Bold.woff") format("woff"), url("../../fonts/Rubik-Bold.ttf") format("truetype"), url("../../fonts/Rubik-Bold.svg#Rubik-Bold") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap; }
@@ -10578,7 +10578,7 @@ ul {
   .ratings i {
     width: 12px;
     height: 12px;
-    background: url("../images/icon-star.svg") no-repeat;
+    background: url("../../images/icon-star.svg") no-repeat;
     display: inline-block;
     background-size: 12px;
     margin: 0 4px; }
@@ -10660,7 +10660,7 @@ ul {
       right: 20px;
       top: 50%;
       margin: -7px 0 0 0;
-      background: url("../images/arrow-down.svg") no-repeat;
+      background: url("../../images/arrow-down.svg") no-repeat;
       background-size: 10px 15px;
       content: ""; }
   .list-dropdown .list {
@@ -10875,7 +10875,7 @@ ul {
     .notification-box .notification-box-bottom .right-side {
       width: auto;
       float: right;
-      background: url("../images/icon-check.svg") no-repeat left 2px;
+      background: url("../../images/icon-check.svg") no-repeat left 2px;
       background-size: 10px 10px;
       padding: 0 0 0 15px; }
 
@@ -10972,7 +10972,7 @@ ul {
     .notification-box .notification-car-title {
       font-size: 23px; }
     .notification-box .notification-box-bottom .right-side {
-      background: url("../images/icon-check.svg") no-repeat left 4px;
+      background: url("../../images/icon-check.svg") no-repeat left 4px;
       background-size: 16px 16px;
       padding: 0 0 0 22px; } }
 
@@ -11041,7 +11041,7 @@ header {
         width: 34px;
         height: 12px;
         float: left;
-        background: url("../images/icon-car.png") no-repeat left top;
+        background: url("../../images/icon-car.png") no-repeat left top;
         background-size: 34px 12px;
         border: none;
         padding: 0; }
@@ -11052,7 +11052,7 @@ header {
         width: 23px;
         height: 23px;
         float: right;
-        background: url("../images/icon-menu.png") no-repeat left top;
+        background: url("../../images/icon-menu.png") no-repeat left top;
         border: none;
         padding: 0; }
   header .header-top {
@@ -11075,7 +11075,7 @@ header {
     float: left;
     margin: 12px 0 0 50px; }
     header .header-search-btn button {
-      background: url("../images/icon-search.png") no-repeat left top;
+      background: url("../../images/icon-search.png") no-repeat left top;
       width: 42px;
       height: 42px;
       float: left;
@@ -11192,7 +11192,7 @@ header {
     cursor: pointer;
     display: none; }
   .search-data button {
-    background: url("../images/icon-search.png") no-repeat left top;
+    background: url("../../images/icon-search.png") no-repeat left top;
     width: 42px;
     height: 42px;
     float: left;
@@ -11412,7 +11412,7 @@ header {
     height: 720px;
     position: relative; }
     #banner .banner-slide.slide-1 {
-      background: url("../images/banner-mobile.jpg") no-repeat right center;
+      background: url("../../images/banner-mobile.jpg") no-repeat right center;
       background-size: cover; }
   #banner .banner-slide-container {
     width: 100%;
@@ -11543,7 +11543,7 @@ header {
   width: 100%;
   float: left;
   position: relative;
-  background: url("../images/banner-car.jpg") no-repeat center center;
+  background: url("../../images/banner-car.jpg") no-repeat center center;
   background-size: cover;
   padding: 70px 0;
   margin: 84px 0 0 0; }
@@ -11566,7 +11566,7 @@ header {
   width: 100%;
   float: left;
   position: relative;
-  background: url("../images/banner-our-promotion.jpg") no-repeat center center;
+  background: url("../../images/banner-our-promotion.jpg") no-repeat center center;
   background-size: cover;
   padding: 70px 0;
   margin: 84px 0 0 0; }
@@ -11579,7 +11579,7 @@ header {
   #banner .banner-slide {
     height: 690px; }
     #banner .banner-slide.slide-1 {
-      background: url("../images/banner.jpg") no-repeat center top;
+      background: url("../../images/banner.jpg") no-repeat center top;
       background-size: cover; }
   #banner h1 {
     font-size: 40px;
@@ -11689,7 +11689,7 @@ footer {
     footer .footer-social a {
       width: 45px;
       height: 45px;
-      background: url("../images/social-icon.png") no-repeat;
+      background: url("../../images/social-icon.png") no-repeat;
       float: left;
       margin: 0 27px 0 0; }
       footer .footer-social a.facebook {
@@ -11822,48 +11822,48 @@ footer {
             top: 0;
             display: none; }
             .brand-section .tab-container .tab-data-left .nav-tabs a .car.car-1 {
-              background: url("../images/hatchbacks.png") no-repeat left top; }
+              background: url("../../images/hatchbacks.png") no-repeat left top; }
             .brand-section .tab-container .tab-data-left .nav-tabs a .car.car-2 {
-              background: url("../images/saloons.png") no-repeat left top; }
+              background: url("../../images/saloons.png") no-repeat left top; }
             .brand-section .tab-container .tab-data-left .nav-tabs a .car.car-3 {
-              background: url("../images/suvs.png") no-repeat left top; }
+              background: url("../../images/suvs.png") no-repeat left top; }
             .brand-section .tab-container .tab-data-left .nav-tabs a .car.car-4 {
-              background: url("../images/coupes.png") no-repeat left top; }
+              background: url("../../images/coupes.png") no-repeat left top; }
           .brand-section .tab-container .tab-data-left .nav-tabs a .wheel {
             width: 15px;
             height: 15px;
             float: left;
             position: absolute; }
             .brand-section .tab-container .tab-data-left .nav-tabs a .wheel.cw-1-1 {
-              background: url("../images/wheel-1.png") no-repeat left top;
+              background: url("../../images/wheel-1.png") no-repeat left top;
               left: 7px;
               bottom: 0; }
             .brand-section .tab-container .tab-data-left .nav-tabs a .wheel.cw-1-2 {
-              background: url("../images/wheel-1.png") no-repeat left top;
+              background: url("../../images/wheel-1.png") no-repeat left top;
               right: 8px;
               bottom: 0; }
             .brand-section .tab-container .tab-data-left .nav-tabs a .wheel.cw-2-1 {
-              background: url("../images/wheel-2.png") no-repeat left top;
+              background: url("../../images/wheel-2.png") no-repeat left top;
               left: 8px;
               bottom: 2px; }
             .brand-section .tab-container .tab-data-left .nav-tabs a .wheel.cw-2-2 {
-              background: url("../images/wheel-2.png") no-repeat left top;
+              background: url("../../images/wheel-2.png") no-repeat left top;
               right: 11px;
               bottom: 2px; }
             .brand-section .tab-container .tab-data-left .nav-tabs a .wheel.cw-3-1 {
-              background: url("../images/wheel-2.png") no-repeat left top;
+              background: url("../../images/wheel-2.png") no-repeat left top;
               left: 13px;
               bottom: 0px; }
             .brand-section .tab-container .tab-data-left .nav-tabs a .wheel.cw-3-2 {
-              background: url("../images/wheel-2.png") no-repeat left top;
+              background: url("../../images/wheel-2.png") no-repeat left top;
               right: 13px;
               bottom: 0px; }
             .brand-section .tab-container .tab-data-left .nav-tabs a .wheel.cw-4-1 {
-              background: url("../images/wheel-2.png") no-repeat left top;
+              background: url("../../images/wheel-2.png") no-repeat left top;
               left: 8px;
               bottom: 4px; }
             .brand-section .tab-container .tab-data-left .nav-tabs a .wheel.cw-4-2 {
-              background: url("../images/wheel-2.png") no-repeat left top;
+              background: url("../../images/wheel-2.png") no-repeat left top;
               right: 12px;
               bottom: 4px; }
           .brand-section .tab-container .tab-data-left .nav-tabs a.active {
