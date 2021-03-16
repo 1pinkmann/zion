@@ -3029,7 +3029,9 @@ input[type="button"].btn-block {
   text-align: center; }
 
 .tab-content > .tab-pane {
-  display: none; }
+  display: none;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
 
 .tab-content > .active {
   display: block; }
