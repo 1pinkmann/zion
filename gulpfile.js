@@ -45,7 +45,8 @@ gulp.task('compress', function () {
 
 gulp.task('watch', function () {
     gulp.watch('./html/**/*.html', gulp.series('html'));
+    gulp.watch('./all-cars-templates/**/*.html', gulp.series('allCars'));
     gulp.watch('./scss/**/*.scss', gulp.series('sass-compile'));
-    gulp.watch('./css/*.css', gulp.series('minify-css'));
+    gulp.watch('./css/style.css', gulp.series('minify-css'));
     gulp.watch('./js/*.js', gulp.series('compress'));
 })
